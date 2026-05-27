@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.59] - 2026-05-28
+- Fixed Polish characters in update changelog rendering by repairing UTF-8 mojibake before sending update notes to the browser.
+
 ## [0.2.58] - 2026-05-28
 - Odfiltrowano adresy `api.allegro.pl` z miniatur produktów, aby przeglądarka nie ładowała chronionych zasobów API i nie pokazywała błędu `unauthorized`.
 
