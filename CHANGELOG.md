@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.52] - 2026-05-27
+- Poprawiono wygląd panelu informacji o module: metadane są pokazane w kafelkach, pasek aktualizacji jest czytelniejszy, a lista zmian ma kompaktowy biały box zamiast dużego niebieskiego alertu.
+
 ## [0.2.51] - 2026-05-27
 - Dodano bezpieczny górny odstęp panelu rozmów i reklamacji, aby sticky nagłówek PrestaShop nie ucinał pierwszego elementu listy ani nagłówka zgłoszenia.
 
