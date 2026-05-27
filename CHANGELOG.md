@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.62] - 2026-05-28
+- Poprawiono formatowanie tekstu w modalu odmowy zwrotu pieniędzy: mniejsze nagłówki, ciaśniejsze odstępy i czytelniejsze opcje wyboru.
+
 ## [0.2.61] - 2026-05-28
 - Miniatury reklamacji preferuja obraz z zamowienia lub oferty; katalog produktu Allegro jest uzywany dopiero jako ostatni fallback i nie nadpisuje cache zgłoszenia.
 
