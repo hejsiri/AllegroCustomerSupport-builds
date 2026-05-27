@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.63] - 2026-05-28
+- Miniatury reklamacji i dyskusji z `issue_id` nie korzystają już z katalogu produktów Allegro; loader dociąga chat zgłoszenia i szuka miniatury po zamówieniu lub ofercie z `relatesTo`.
+
 ## [0.2.62] - 2026-05-28
 - Poprawiono formatowanie tekstu w modalu odmowy zwrotu pieniędzy: mniejsze nagłówki, ciaśniejsze odstępy i czytelniejsze opcje wyboru.
 
