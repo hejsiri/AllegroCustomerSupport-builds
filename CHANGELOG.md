@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.61] - 2026-05-28
+- Miniatury reklamacji preferuja obraz z zamowienia lub oferty; katalog produktu Allegro jest uzywany dopiero jako ostatni fallback i nie nadpisuje cache zgłoszenia.
+
 ## [0.2.60] - 2026-05-28
 - Lista zwrotow uzywa miniatury z pelnych szczegolow zaznaczonego zwrotu, aby miniatura po lewej byla taka sama jak w panelu szczegolow.
 
