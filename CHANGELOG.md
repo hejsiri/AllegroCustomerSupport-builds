@@ -1,0 +1,267 @@
+# Changelog
+
+## [0.2.50] - 2026-05-27
+- Zbliżono mechanizm aktualizacji do CargoStockManager: panel aktualizacji pokazuje changelog dostępnej wersji, updater pobiera zakres zmian z `CHANGELOG.md`, a skrypt release zapisuje lokalny manifest wersjonowany i kopię changeloga.
+
+## [0.2.49] - 2026-05-27
+- Zmieniono nazewnictwo widoczne w module z autorespondera na `AllegroCustomerSupport` / `Obsługa Klienta Allegro`, pozostawiając techniczny identyfikator modułu bez zmian dla kompatybilności aktualizacji.
+
+## [0.2.48] - 2026-05-27
+- Poprawiono przewijanie panelu dyskusji/reklamacji: wewnętrzne listy nie przestawiają już wysokości całego widoku, a formularz odpowiedzi nie nakłada się jako osobna warstwa.
+
+## [0.2.47] - 2026-05-27
+- Dodano tłumaczenia angielskich powodów dyskusji dotyczących odmowy przyjęcia zwrotu przez sprzedającego.
+
+## [0.2.46] - 2026-05-27
+- Zmieniono nazwę modułu i głównej pozycji menu na `Obsługa Klienta Allegro`.
+
+## [0.2.45] - 2026-05-27
+- Dodano wybór gotowej wiadomości z aktywnych reguł autorespondera jako dropup obok przycisku wysyłki.
+
+## [0.2.44] - 2026-05-27
+- Ujednolicono kolory tytułów w timeline: wszystkie wykonane kroki mają niebieski kolor, nie tylko krok aktywny.
+
+## [0.2.43] - 2026-05-27
+- Zwiększono czytelność meta nagłówka zwrotu (`Zamówienie Allegro` / `Zamówienie w sklepie`) do 14px oraz pokazano powody zwrotu pieniędzy jako listę widoczną od razu (radio), bez listy rozwijanej.
+
+## [0.2.42] - 2026-05-27
+- Formularz odmowy zwrotu w modalu otrzymał dokładnie żądaną listę powodów (z opisami) oraz pole komentarza na dole, z mapowaniem do kodów API Allegro.
+
+## [0.2.41] - 2026-05-27
+- Dodano formularz `Odmowa zwrotu pieniędzy` w modalu i ujednolicono jego wygląd ze stylem modułu/PrestaShop.
+
+## [0.2.40] - 2026-05-27
+- Formularz zwrotu pieniędzy przeniesiono do modala i dodano wymagane pole `Powód zwrotu pieniędzy` zgodne z powodami Allegro.
+
+## [0.2.39] - 2026-05-27
+- Delikatnie poszerzono kolumnę `Zwrot środków` i zablokowano łamanie numeru konta bankowego na dwie linie.
+
+## [0.2.38] - 2026-05-27
+- Poprawiono status `COMMISSION_REFUND_CLAIMED`: nie oznacza już `Zwrot prowizji` ani `Zwrot wpłaty`; krok prowizji domyka się wyłącznie przy `COMMISSION_REFUNDED`.
+
+## [0.2.37] - 2026-05-27
+- Poprawiono wyznaczanie dat `Zwrot wpłaty` i `Zwrot prowizji`: gdy brakuje ich w szczegółach zwrotu, moduł używa danych rekordu zwrotu z listy (`statusChangedAt`/`updatedAt`) jako fallbacku.
+
+## [0.2.36] - 2026-05-27
+- Zmniejszono mniej więcej o połowę odstęp między etykietą menu a czerwoną plakietką licznika.
+
+## [0.2.35] - 2026-05-27
+- Ustawiono `Ustawienia` na końcu podmenu modułu i dodano czerwoną plakietkę z liczbą zwrotów do obsłużenia przy pozycji `Zwroty towarów`.
+
+## [0.2.34] - 2026-05-27
+- Usunięto fałszywe daty `Zwrot wpłaty` wyciągane z płatności oryginalnego zamówienia przy zwrotach, które nie zostały jeszcze zrefundowane.
+
+## [0.2.33] - 2026-05-27
+- Dla zwrotów bez przewoźnika i numeru przesyłki pole `Metoda dostawy` pokazuje teraz `Wysyłka własna`.
+
+## [0.2.32] - 2026-05-27
+- Poprawiono wykrywanie `Wysyłka własna`, aby opierało się na braku przewoźnika, numeru przesyłki i trackingu w danych zwrotu.
+
+## [0.2.31] - 2026-05-27
+- Dodano skrócony timeline dla `Wysyłka własna`, bez kroków transportowych między zgłoszeniem a zwrotem wpłaty.
+
+## [0.2.30] - 2026-05-27
+- Przeniesiono etykietę `FAKTURA` / `BEZ FAKTURY` z nagłówka do sekcji `Dane kupującego` i zmniejszono ją do rozmiaru tekstowego.
+
+## [0.2.29] - 2026-05-27
+- Dane kupującego w zwrocie pobierane są priorytetowo z zamówienia Allegro, a w nagłówku dodano etykietę `FAKTURA` / `BEZ FAKTURY`.
+
+## [0.2.28] - 2026-05-27
+- Podlinkowano `Zamówienie w sklepie` w nagłówku zwrotu do widoku zamówienia PrestaShop.
+
+## [0.2.27] - 2026-05-27
+- Uproszczono wyszukiwarkę zwrotów do jednego pola bez wyboru typu i dodano szerokie wyszukiwanie po numerach, przesyłkach, telefonach i danych kupującego.
+
+## [0.2.26] - 2026-05-27
+- Zmieniono tytuł podstrony zwrotów z `Zwroty` na `Zwroty towarów`.
+
+## [0.2.25] - 2026-05-27
+- Zmieniono nazwę pozycji menu `Zwroty` na `Zwroty towarów`.
+
+## [0.2.24] - 2026-05-27
+- Uproszczono meta nagłówka zwrotu do `Zamówienie Allegro` i `Zamówienie w sklepie`, bez loginu i daty.
+
+## [0.2.23] - 2026-05-27
+- Dodano login kupującego w sekcji `Dane kupującego` dla zwrotów.
+
+## [0.2.22] - 2026-05-27
+- Przycisk `Śledź na stronie przewoźnika` przełączono na domyślny styl `btn-primary` z BO zamiast własnego koloru.
+
+## [0.2.21] - 2026-05-27
+- Usunięto z listy zwrotów nick, numer zwrotu i numer zamówienia oraz przestano ucinać tytuły produktów.
+
+## [0.2.20] - 2026-05-27
+- Dodano w nagłówku zwrotu linkowane zamówienie Allegro oraz numer zamówienia PrestaShop obok linku do zwrotu.
+
+## [0.2.19] - 2026-05-27
+- Zmieniono link do zwrotu w Allegro Sales Center na wyszukiwanie po numerze zwrotu z parametrami `page`, `limit`, `from` i `search`.
+
+## [0.2.18] - 2026-05-26
+- Przeniesiono sumę `Razem` z sekcji `Zwrot środków` do dolnego panelu obok przycisku `Decyzja zwrotowa`.
+
+## [0.2.17] - 2026-05-26
+- Zmieniono przycisk zewnętrznego trackingu na `Śledź na stronie przewoźnika` i nadano mu niebieski styl.
+
+## [0.2.16] - 2026-05-26
+- Zwężono jeszcze bardziej okno modala trackingu.
+
+## [0.2.15] - 2026-05-26
+- Ułożono nagłówek modala trackingu tak, aby tytuł z numerem był po lewej, a przycisk zamknięcia po prawej.
+
+## [0.2.14] - 2026-05-26
+- Poprawiono polskie znaki w tłumaczeniach statusów trackingu w modalu przesyłki.
+
+## [0.2.13] - 2026-05-26
+- Przeniesiono przycisk `Pokaż API` pod timeline statusów zwrotu.
+
+## [0.2.12] - 2026-05-26
+- Zwężono okno modala trackingu, aby lepiej pasowało do szerokości historii przesyłki.
+
+## [0.2.11] - 2026-05-26
+- Nagłówek modala trackingu pokazuje teraz tytuł, numer przesyłki i przewoźnika w jednym wierszu.
+
+## [0.2.10] - 2026-05-26
+- Dodano polskie tłumaczenia trackingu i wyrenderowano historię w modalu w tym samym stylu co timeline zwrotu.
+
+## [0.2.9] - 2026-05-26
+- Dla `INPOST` numer `waybill` również otwiera modal z trackingiem z API, z przyciskiem do strony przewoźnika.
+
+## [0.2.8] - 2026-05-26
+- Dla przesyłek `ALLEGRO` preferowany jest allegrowy numer `waybill` jako główne źródło trackingu i linkowania.
+
+## [0.2.7] - 2026-05-26
+- Modal trackingu działa teraz tylko dla przesyłek `ALLEGRO`, a pozostali przewoźnicy otwierają zewnętrzne śledzenie.
+
+## [0.2.6] - 2026-05-26
+- Numer przesyłki w zwrocie otwiera teraz modal z historią trackingu z API, z fallbackiem do zewnętrznego śledzenia.
+
+## [0.2.5] - 2026-05-26
+- Tracking zwrotu próbuje teraz zarówno par `transportingCarrierId + transportingWaybill`, jak i `carrierId + waybill`, a `ALLEGRO` linkuje do publicznego śledzenia Allegro Delivery.
+
+## [0.2.4] - 2026-05-26
+- Diagnostykę API zwrotu przeniesiono z widoku szczegółów do modala otwieranego przyciskiem `Pokaż API`.
+
+## [0.2.3] - 2026-05-26
+- `Nadany` może teraz być wyliczany z pierwszego `IN_TRANSIT` w historii trackingu, jeśli po nim pojawiały się `PENDING`.
+
+## [0.2.2] - 2026-05-26
+- Timeline zwrotu koloruje teraz tylko kroki z realnymi datami zamiast zakładać wykonanie po samym statusie końcowym.
+
+## [0.2.1] - 2026-05-26
+- Dodano link diagnostyczny przy timeline zwrotu i podgląd surowej odpowiedzi API dla wybranego zwrotu.
+
+## [0.2.0] - 2026-05-26
+- Usunięto fallback `PENDING` dla kroku `Nadany`, żeby nie udawać nadania przy samym zgłoszeniu zwrotu.
+
+## [0.1.200] - 2026-05-26
+- Ograniczono wykrywanie dat `Nadany` do rzeczywistych historii statusu i trackingu, bez kopiowania z pierwszej przesyłki.
+
+## [0.1.199] - 2026-05-26
+- Poszerzono wykrywanie dat statusów w timeline zwrotu i dodano bezpieczny fallback tylko dla aktywnego kroku.
+
+## [0.1.198] - 2026-05-26
+- Usunięto kopiowanie dat na kroki bez własnego statusu w timeline zwrotu.
+
+## [0.1.197] - 2026-05-26
+- Dodano biały odstęp także przy szarych punktach timeline'u zwrotu.
+
+## [0.1.196] - 2026-05-26
+- Dopięto fallback dat w timeline zwrotu i dodano obramowanie punktu, aby linia odcinała się od markera.
+
+## [0.1.195] - 2026-05-26
+- Ujednolicono kolor aktywnego punktu timeline'u i kolorowanie linii między wykonanymi krokami zwrotu.
+
+## [0.1.194] - 2026-05-26
+- Uaktywniono zlecanie zwrotu pieniędzy z poziomu decyzji zwrotowej Allegro.
+
+## [0.1.193] - 2026-05-26
+- Poprawiono menu "Decyzja zwrotowa", aby otwierało się nad przyciskiem w dolnym panelu.
+
+## [0.1.192] - 2026-05-26
+- Poprawiono wykrywanie imienia i nazwiska kupującego, format telefonu oraz linki śledzenia do stron przewoźników.
+
+## [0.1.191] - 2026-05-26
+- Poprawiono wygląd pionowego timeline'u zwrotu oraz wykrywanie dat zwrotu wpłaty i prowizji.
+
+## [0.1.190] - 2026-05-26
+- Poprawiono dane kupującego, linkowanie e-maila i numeru śledzenia oraz miniatury produktów w widoku zwrotu.
+
+## [0.1.189] - 2026-05-26
+- Dodano czytelne tłumaczenie powodu zwrotu `NONE` oraz dodatkowe pola opisu powodu zwrotu.
+
+## [0.1.188] - 2026-05-26
+- Uproszczono szczegóły zwrotu do najważniejszych danych: produkty, status, kupujący, dostawa, adres zwrotu, zwrot środków i suma.
+
+## [0.1.187] - 2026-05-26
+- Poprawiono zapamiętywanie filtrów zwrotów przy przechodzeniu między pozycjami, odświeżaniu i paginacji.
+
+## [0.1.186] - 2026-05-26
+- Poprawiono link do zwrotu w Allegro Sales Center, aby używał bezpośredniej ścieżki po id zwrotu.
+
+## [0.1.185] - 2026-05-26
+- Zmieniono menu "Decyzja zwrotowa" na standardowy styl przycisku i dropdownu PrestaShop.
+
+## [0.1.184] - 2026-05-26
+- Uzupełniono timeline zwrotu o daty z historii śledzenia przesyłki zwrotnej.
+
+## [0.1.183] - 2026-05-26
+- Dodano przycisk "Decyzja zwrotowa" z menu decyzji w szczegółach zwrotu.
+
+## [0.1.182] - 2026-05-26
+- Dodano poziomy timeline statusu zwrotu w szczegółach zwrotu.
+
+## [0.1.181] - 2026-05-26
+- Uporządkowano pasek filtrów w zakładce "Zwroty".
+- Dodano domyślny filtr daty zwrotów z ostatnich 90 dni oraz wybór zakresu dat.
+
+## [0.1.180] - 2026-05-26
+- Dodano zakładkę "Zwroty" z listą, filtrami i szczegółami zwrotów klienckich Allegro.
+- Dodano obsługę odmowy zwrotu przez API Allegro.
+
+## [0.1.179] - 2026-05-14
+- Wymuszono odświeżenie zakładek modułu i nazwę "Reklamacje" w menu BO po aktualizacji.
+
+## [0.1.178] - 2026-05-14
+- Dodano preloader rozmowy przy przełączaniu pozycji na listach wiadomości, dyskusji i reklamacji.
+- Usunięto efekt przygaszenia okna rozmowy podczas ładowania kolejnej pozycji.
+
+## [0.1.177] - 2026-05-13
+- Rozdzielono widoki menu: "Dyskusje" pokazują tylko dyskusje, a "Reklamacje" tylko reklamacje.
+
+## [0.1.176] - 2026-05-13
+- Zmieniono etykietę pozycji menu "Reklamacje i dyskusje" na "Reklamacje".
+
+## [0.1.175] - 2026-05-13
+- Naprawiono błąd odpowiedzi AJAX przy sprawdzaniu aktualizacji modułu.
+
+## [0.1.174] - 2026-05-13
+- Poprawiono rozwijanie i aktywny stan menu modułu w Back Office.
+- Ustawienia modułu renderują się teraz przez własny kontroler menu zamiast przekierowania do listy modułów.
+
+## [0.1.173] - 2026-05-13
+- Poprawiono AJAX ręcznego sprawdzania aktualizacji w konfiguracji modułu.
+- Przeniesiono panel informacji o module nad ustawienia ogólne.
+
+## [0.1.172] - 2026-05-13
+- Zmieniono działanie ręcznego sprawdzania aktualizacji na AJAX-owy mechanizm jak w Cargo Stock Manager.
+- Ten sam przycisk po wykryciu dostępnej wersji przełącza się w instalację aktualizacji.
+
+## [0.1.171] - 2026-05-13
+- Dopasowano rozmiar tekstu i przycisków w panelu informacji o module do reszty konfiguracji.
+
+## [0.1.170] - 2026-05-13
+- Przebudowano panel aktualizacji na widok "Informacje o module" w stylu Cargo Stock Manager.
+- Dodano wybór kanału aktualizacji i przycisk zapisu bezpośrednio przed ręcznym sprawdzaniem aktualizacji.
+
+## [0.1.169] - 2026-05-13
+- Dodano awaryjne pobieranie manifestu aktualizacji przez GitHub API.
+- Doprecyzowano komunikaty błędów sprawdzania aktualizacji.
+
+## [0.1.168] - 2026-05-13
+- Poprawiono wyrównanie kontrolek w panelu aktualizacji modułu.
+- Ujednolicono rozmiar tekstu w bloku statusu połączenia konta Allegro.
+
+## [0.1.167] - 2026-05-13
+- Dodano podpisany mechanizm aktualizacji modułu przez publiczne repo buildów.
+- Dodano panel sprawdzania i instalowania aktualizacji w konfiguracji modułu.
+- Dodano konfigurację prywatnego repo źródłowego i publicznego repo buildów.
