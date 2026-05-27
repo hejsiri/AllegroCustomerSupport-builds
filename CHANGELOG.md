@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.56] - 2026-05-28
+- Poprawiono miniatury produktów w reklamacjach: lazy loader miniatur potrafi dociągnąć szczegóły zgłoszenia po `issue_id`, gdy lista Allegro nie zawiera identyfikatorów oferty lub zamówienia.
+
 ## [0.2.55] - 2026-05-28
 - Ujednolicono kolor etykiety statusu `W toku` z etykietą `Dyskusja` na liście dyskusji.
 
