@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.53] - 2026-05-28
+- Ukryto listę uprawnień tokena Allegro w ustawieniach modułu, pozostawiając informacje o połączonym koncie i ważności tokena.
+
 ## [0.2.52] - 2026-05-27
 - Poprawiono wygląd panelu informacji o module: metadane są pokazane w kafelkach, pasek aktualizacji jest czytelniejszy, a lista zmian ma kompaktowy biały box zamiast dużego niebieskiego alertu.
 
