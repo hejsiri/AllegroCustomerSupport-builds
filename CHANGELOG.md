@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.57] - 2026-05-28
+- Ukryto natywną ikonkę uszkodzonego obrazka na liście dyskusji i reklamacji: każdy błąd ładowania miniatury przełącza teraz widok na placeholder modułu.
+
 ## [0.2.56] - 2026-05-28
 - Poprawiono miniatury produktów w reklamacjach: lazy loader miniatur potrafi dociągnąć szczegóły zgłoszenia po `issue_id`, gdy lista Allegro nie zawiera identyfikatorów oferty lub zamówienia.
 
