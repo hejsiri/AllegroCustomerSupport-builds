@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.54] - 2026-05-28
+- Poprawiono miniatury produktów na liście dyskusji: moduł wyszukuje identyfikatory oferty, produktu i zamówienia także w zagnieżdżonych danych Allegro oraz zapisuje miniaturę pod wszystkimi dostępnymi kluczami cache.
+
 ## [0.2.53] - 2026-05-28
 - Ukryto listę uprawnień tokena Allegro w ustawieniach modułu, pozostawiając informacje o połączonym koncie i ważności tokena.
 
