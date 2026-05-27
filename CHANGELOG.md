@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.58] - 2026-05-28
+- Odfiltrowano adresy `api.allegro.pl` z miniatur produktów, aby przeglądarka nie ładowała chronionych zasobów API i nie pokazywała błędu `unauthorized`.
+
 ## [0.2.57] - 2026-05-28
 - Ukryto natywną ikonkę uszkodzonego obrazka na liście dyskusji i reklamacji: każdy błąd ładowania miniatury przełącza teraz widok na placeholder modułu.
 
