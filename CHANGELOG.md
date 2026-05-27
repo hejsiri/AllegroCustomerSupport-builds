@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.55] - 2026-05-28
+- Ujednolicono kolor etykiety statusu `W toku` z etykietą `Dyskusja` na liście dyskusji.
+
 ## [0.2.54] - 2026-05-28
 - Poprawiono miniatury produktów na liście dyskusji: moduł wyszukuje identyfikatory oferty, produktu i zamówienia także w zagnieżdżonych danych Allegro oraz zapisuje miniaturę pod wszystkimi dostępnymi kluczami cache.
 
