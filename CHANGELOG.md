@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.60] - 2026-05-28
+- Lista zwrotow uzywa miniatury z pelnych szczegolow zaznaczonego zwrotu, aby miniatura po lewej byla taka sama jak w panelu szczegolow.
+
 ## [0.2.59] - 2026-05-28
 - Fixed Polish characters in update changelog rendering by repairing UTF-8 mojibake before sending update notes to the browser.
 
