@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.51] - 2026-05-27
+- Dodano bezpieczny górny odstęp panelu rozmów i reklamacji, aby sticky nagłówek PrestaShop nie ucinał pierwszego elementu listy ani nagłówka zgłoszenia.
+
 ## [0.2.50] - 2026-05-27
 - Zbliżono mechanizm aktualizacji do CargoStockManager: panel aktualizacji pokazuje changelog dostępnej wersji, updater pobiera zakres zmian z `CHANGELOG.md`, a skrypt release zapisuje lokalny manifest wersjonowany i kopię changeloga.
 
