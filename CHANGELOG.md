@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.89] - 2026-05-28
+- Dodano bezpieczny fallback dla niepełnych zapisanych checkout formów: gdy pozycja reklamacji ma `offer_id`, ale lokalny checkout form nie ma tej pozycji, moduł próbuje pobrać identyfikatory produktu Allegro (`/sale/products/{product_id}`) i dopasować je do `order_detail` lub produktu PrestaShop.
+- Diagnostyka miniatur pokazuje teraz lookup po produkcie Allegro oraz identyfikatory znalezione w payloadzie reklamacji/chatu.
+
 ## [0.2.88] - 2026-05-28
 - Zaostrzono dobór miniatur reklamacji w zamówieniach wielopozycyjnych: jeśli reklamacja ma `offer_id`, a checkout form zawiera pozycje z innymi `offer_id`, moduł nie używa ich już jako fallbacku.
 - Diagnostyka miniatur pokazuje teraz powód pominięcia fallbacku, gdy w zamówieniu Allegro nie ma pozycji pasującej do `offer_id` reklamacji.
