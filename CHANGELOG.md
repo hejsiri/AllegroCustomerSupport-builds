@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.83] - 2026-05-28
+- Naprawiono budowanie URL miniatur PrestaShop: moduł używa teraz formatu `id_product-id_image`, szuka `link_rewrite` z fallbackiem poza bieżącym sklepem/językiem i pokazuje szczegóły wyboru obrazu w diagnostyce.
+- Dopasowanie EAN/reference/SKU w PrestaShop ignoruje przypadkowe spacje w polach produktu, kombinacji i szczegółów zamówienia.
+
 ## [0.2.82] - 2026-05-28
 - Miniatury dyskusji i reklamacji są teraz strict PrestaShop: nie zapisują ani nie zwracają obrazu z Allegro jako finalnego fallbacku.
 - Lookup miniatur po `checkout_form_id` sprawdza też powiązane zamówienie PrestaShop i jego `order_detail`, w tym `product_ean13`, `product_reference`, `product_supplier_reference`, `product_upc` oraz `product_attribute_id`.
