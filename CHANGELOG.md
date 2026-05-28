@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.82] - 2026-05-28
+- Miniatury dyskusji i reklamacji są teraz strict PrestaShop: nie zapisują ani nie zwracają obrazu z Allegro jako finalnego fallbacku.
+- Lookup miniatur po `checkout_form_id` sprawdza też powiązane zamówienie PrestaShop i jego `order_detail`, w tym `product_ean13`, `product_reference`, `product_supplier_reference`, `product_upc` oraz `product_attribute_id`.
+- Diagnostyka miniatur pokazuje wynik dopasowania po szczegółach zamówienia PrestaShop oraz ignorowany URL Allegro, jeśli Allegro go zwróciło.
+
 ## [0.2.81] - 2026-05-28
 - Diagnostyka miniatur pokazuje `module_version` i `thumbnail_logic_version`, aby łatwo potwierdzić wersję faktycznie zainstalowaną w sklepie.
 - Usunięto z klienta API przestarzałą metodę `GET /sale/offers/{id}`, żeby żaden fallback ani diagnostyka nie mogły już wywołać zablokowanego endpointu Allegro.
