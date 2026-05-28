@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.94] - 2026-05-28
+- Formularz odpowiedzi w dyskusjach i reklamacjach używa teraz ikony listy (hamburger) osadzonej w polu tekstowym zamiast osobnego przycisku `Gotowiec`.
+- Dodano osobną sekcję `Gotowe odpowiedzi (ręczne)` w ustawieniach modułu, gdzie można tworzyć własne gotowce niezależnie od reguł automatycznych.
+- Gotowe odpowiedzi obsługują teraz zmienne kontekstowe (m.in. `{orderdate}`, `{orderdatetime}`, `{claimdate}`, `{claimdatetime}`, `{order_id}`, `{offer_id}`, `{buyer_login}`), a podmiana działa zarówno przy wyborze gotowca, jak i przy wysyłce wiadomości.
+
 ## [0.2.93] - 2026-05-28
 - Naprawiono kodowanie listy zmian w panelu aktualizacji: tekst z changeloga jest dodatkowo naprawiany dla typowych przekłamań Windows-1250/ISO-8859-2/Windows-1252.
 - Odpowiedzi AJAX aktualizacji są zwracane jako UTF-8 z `JSON_UNESCAPED_UNICODE`, żeby polskie znaki nie zamieniały się w mojibake po stronie przeglądarki.
