@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.87] - 2026-05-28
+- Diagnostyka miniatur zwraca teraz JSON z nagłówkiem `application/json; charset=utf-8`, żeby polskie znaki nie wyświetlały się jako mojibake w przeglądarce.
+
 ## [0.2.86] - 2026-05-28
 - Dodano fallback dla starych checkout formów bez EAN/sygnatur: po znalezieniu zamówienia PrestaShop moduł dopasowuje pozycję po podobieństwie nazwy z Allegro do `order_detail.product_name`, a dla zamówień z jednym produktem używa tej jednej pozycji.
 - Odświeżono klucze cache miniatur, żeby nie mieszać wyników ze starszą logiką.
