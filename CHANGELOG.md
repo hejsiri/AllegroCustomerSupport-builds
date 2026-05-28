@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.66] - 2026-05-28
+- Ustawiono miniatury PrestaShop jako pierwsze źródło w zgłoszeniach i zwrotach, z Allegro tylko jako fallbackiem.
+
 ## [0.2.65] - 2026-05-28
 - Przywrócono szersze szukanie miniatur dla dyskusji, a blokadę katalogu produktów Allegro ograniczono do reklamacji.
 
