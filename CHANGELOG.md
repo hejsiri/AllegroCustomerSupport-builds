@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.69] - 2026-05-28
+- Lazy loader miniatur zgłoszeń używa teraz chatu do znalezienia zamówienia PrestaShop, gdy lista Allegro zawiera tylko `issue_id`.
+
 ## [0.2.68] - 2026-05-28
 - Miniatury dyskusji i reklamacji opierają się wyłącznie na produktach PrestaShop, bez fallbacku do obrazów Allegro.
 
