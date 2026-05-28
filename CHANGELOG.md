@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.67] - 2026-05-28
+- Zabezpieczono lokalne zapytania miniatur PrestaShop, aby błąd SQL fallbacku nie blokował pobierania danych Allegro.
+
 ## [0.2.66] - 2026-05-28
 - Ustawiono miniatury PrestaShop jako pierwsze źródło w zgłoszeniach i zwrotach, z Allegro tylko jako fallbackiem.
 
