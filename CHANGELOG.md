@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.77] - 2026-05-28
+- Miniatury zgłoszeń używają zamówienia Allegro do wyboru właściwej pozycji, a gdy `checkout_form.lineItems` nie zawiera obrazów, dociągają miniaturę z oferty/produktu Allegro dla tej pozycji.
+- Cache miniatur zgłoszeń przeniesiono na klucze `order-v3`, aby ominąć wcześniejsze puste lub błędne wyniki.
+
 ## [0.2.76] - 2026-05-28
 - Diagnostyka miniatur zgłoszeń jest teraz widoczna w panelu jako przycisk `diag` przy miniaturze oraz jako lista linków w konsoli przeglądarki.
 
