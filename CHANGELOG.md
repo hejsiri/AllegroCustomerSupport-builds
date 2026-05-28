@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.90] - 2026-05-28
+- Fallback miniatur dla niepełnych checkout formów sprawdza teraz także `/sale/product-offers/{offer_id}`, żeby wyciągnąć `external.id`/EAN oferty, gdy katalogowy `/sale/products/{product_id}` zwraca 404.
+- Cache miniatur przeniesiono na klucze `ps-v12`, aby odciąć wyniki bez lookupu po ofercie produktowej.
+
 ## [0.2.89] - 2026-05-28
 - Dodano bezpieczny fallback dla niepełnych zapisanych checkout formów: gdy pozycja reklamacji ma `offer_id`, ale lokalny checkout form nie ma tej pozycji, moduł próbuje pobrać identyfikatory produktu Allegro (`/sale/products/{product_id}`) i dopasować je do `order_detail` lub produktu PrestaShop.
 - Diagnostyka miniatur pokazuje teraz lookup po produkcie Allegro oraz identyfikatory znalezione w payloadzie reklamacji/chatu.
