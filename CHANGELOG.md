@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.98] - 2026-05-28
+- Dodano zmienne gotowych odpowiedzi dla kwoty reklamowanego produktu: `{claim_amount}`, `{claim_amount_value}`, `{claim_currency}`, `{claim_quantity}` i `{claim_unit_amount}`.
+- Kwota reklamacji jest liczona z pozycji zamówienia Allegro dopasowanej po `offer_id`, z fallbackiem do lokalnie zapisanego checkout formu dla starszych zamówień.
+- Formularz odpowiedzi po powiększeniu zachowuje przewinięcie wątku rozmowy i ma bardziej kompaktową wysokość przycisku `Wyślij`.
+
 ## [0.2.97] - 2026-05-28
 - Ulepszono naprawę kodowania changeloga w panelu aktualizacji: parser rozdziela wpisy po liniach w trybie Unicode, co eliminuje rozbijanie polskich znaków podczas odczytu.
 - Doprecyzowano opisy zmian, aby unikać prezentowania przykładowych sekwencji mojibake jako treści notki.
