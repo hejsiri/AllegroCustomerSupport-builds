@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.99] - 2026-05-28
+- Dodano zmienną `{claim_product_name}` dla gotowych odpowiedzi, uzupełnianą nazwą reklamowanego produktu z pozycji zamówienia dopasowanej po `offer_id`.
+- Dodano aliasy `{claimed_product_name}`, `{issue_product_name}` i `{product_name}` oraz pokazano nową zmienną w podpowiedzi sekcji gotowych odpowiedzi.
+
 ## [0.2.98] - 2026-05-28
 - Dodano zmienne gotowych odpowiedzi dla kwoty reklamowanego produktu: `{claim_amount}`, `{claim_amount_value}`, `{claim_currency}`, `{claim_quantity}` i `{claim_unit_amount}`.
 - Kwota reklamacji jest liczona z pozycji zamówienia Allegro dopasowanej po `offer_id`, z fallbackiem do lokalnie zapisanego checkout formu dla starszych zamówień.
