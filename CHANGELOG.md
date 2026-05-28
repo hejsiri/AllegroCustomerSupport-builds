@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.93] - 2026-05-28
+- Naprawiono kodowanie listy zmian w panelu aktualizacji: tekst z changeloga jest dodatkowo naprawiany dla typowych przekłamań Windows-1250/ISO-8859-2/Windows-1252.
+- Odpowiedzi AJAX aktualizacji są zwracane jako UTF-8 z `JSON_UNESCAPED_UNICODE`, żeby polskie znaki nie zamieniały się w mojibake po stronie przeglądarki.
+
 ## [0.2.92] - 2026-05-28
 - Miniatury reklamacji i dyskusji nie dopasowują już pozycji zamówienia po nazwie ani fuzzy-name; decyzja opiera się na identyfikatorach/EAN-ach, a brak trafienia w PrestaShop zostaje brakiem miniatury zamiast ryzyka pokazania innego produktu.
 - Lookup po identyfikatorze PrestaShop normalizuje teraz spacje, myślniki i warianty EAN oraz sprawdza też `product_supplier.product_supplier_reference` i `cargostockmanager_product_logistics.module_model`.
