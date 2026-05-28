@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.72] - 2026-05-28
+- Miniatury dyskusji i reklamacji są pobierane najpierw z pozycji zamówienia Allegro (`checkout_form_id` + `offer_id`), czyli z tego samego źródła co poprawne miniatury w zamówieniu.
+
 ## [0.2.71] - 2026-05-28
 - Przebudowano resolver miniatur zgłoszeń: `checkout_form_id` mapuje zamówienie PrestaShop, a `offer_id` wybiera konkretną pozycję po referencji, EAN/GTIN, SKU, nazwie lub zapisanym payloadzie checkout form.
 
