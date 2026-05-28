@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.65] - 2026-05-28
+- Przywrócono szersze szukanie miniatur dla dyskusji, a blokadę katalogu produktów Allegro ograniczono do reklamacji.
+
 ## [0.2.64] - 2026-05-28
 - Twardo odcięto katalogowe `productSet.product.images` dla miniatur reklamacji i dyskusji oraz przeniesiono cache zgłoszeń na nowe klucze bez starych wpisów po ofercie.
 
