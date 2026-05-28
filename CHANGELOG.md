@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.88] - 2026-05-28
+- Zaostrzono dobór miniatur reklamacji w zamówieniach wielopozycyjnych: jeśli reklamacja ma `offer_id`, a checkout form zawiera pozycje z innymi `offer_id`, moduł nie używa ich już jako fallbacku.
+- Diagnostyka miniatur pokazuje teraz powód pominięcia fallbacku, gdy w zamówieniu Allegro nie ma pozycji pasującej do `offer_id` reklamacji.
+- Cache miniatur przeniesiono na klucze `ps-v10`, żeby nie podawać wcześniej zapisanej miniatury z niepasującej pozycji.
+
 ## [0.2.87] - 2026-05-28
 - Diagnostyka miniatur zwraca teraz JSON z nagłówkiem `application/json; charset=utf-8`, żeby polskie znaki nie wyświetlały się jako mojibake w przeglądarce.
 
