@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.91] - 2026-05-28
+- Dla reklamacji z pozycją checkout form pasującą po `offer_id` dopuszczono luźniejsze dopasowanie nazwy do `order_detail`, gdy EAN z oferty Allegro nie zgadza się już z EAN-em historycznej pozycji zamówienia PrestaShop.
+- Cache miniatur przeniesiono na klucze `ps-v13`, żeby odciąć puste wyniki ze starszego progu dopasowania nazw.
+
 ## [0.2.90] - 2026-05-28
 - Fallback miniatur dla niepełnych checkout formów sprawdza teraz także `/sale/product-offers/{offer_id}`, żeby wyciągnąć `external.id`/EAN oferty, gdy katalogowy `/sale/products/{product_id}` zwraca 404.
 - Cache miniatur przeniesiono na klucze `ps-v12`, aby odciąć wyniki bez lookupu po ofercie produktowej.
