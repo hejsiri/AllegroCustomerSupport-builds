@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.81] - 2026-05-28
+- Diagnostyka miniatur pokazuje `module_version` i `thumbnail_logic_version`, aby łatwo potwierdzić wersję faktycznie zainstalowaną w sklepie.
+- Usunięto z klienta API przestarzałą metodę `GET /sale/offers/{id}`, żeby żaden fallback ani diagnostyka nie mogły już wywołać zablokowanego endpointu Allegro.
+
 ## [0.2.80] - 2026-05-28
 - Usunięto przestarzałe wywołania Allegro `GET /sale/offers/{id}` z diagnostyki i fallbacku miniatur, aby nie pokazywać mylącego komunikatu `ACCESS_DENIED`.
 - Diagnostyka dopasowania sygnatury PrestaShop pokazuje teraz jawnie `source: not_found` oraz sprawdzane pola, gdy EAN/reference/SKU nie pasuje do produktu ani kombinacji.
