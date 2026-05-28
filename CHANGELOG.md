@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.92] - 2026-05-28
+- Miniatury reklamacji i dyskusji nie dopasowują już pozycji zamówienia po nazwie ani fuzzy-name; decyzja opiera się na identyfikatorach/EAN-ach, a brak trafienia w PrestaShop zostaje brakiem miniatury zamiast ryzyka pokazania innego produktu.
+- Lookup po identyfikatorze PrestaShop normalizuje teraz spacje, myślniki i warianty EAN oraz sprawdza też `product_supplier.product_supplier_reference` i `cargostockmanager_product_logistics.module_model`.
+- Cache miniatur przeniesiono na klucze `ps-v14`, żeby odciąć błędne wyniki zapisane przez dopasowanie po nazwie.
+
 ## [0.2.91] - 2026-05-28
 - Dla reklamacji z pozycją checkout form pasującą po `offer_id` dopuszczono luźniejsze dopasowanie nazwy do `order_detail`, gdy EAN z oferty Allegro nie zgadza się już z EAN-em historycznej pozycji zamówienia PrestaShop.
 - Cache miniatur przeniesiono na klucze `ps-v13`, żeby odciąć puste wyniki ze starszego progu dopasowania nazw.
