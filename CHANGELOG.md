@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.75] - 2026-05-28
+- Dodano diagnostykę miniatur zgłoszeń w endpointcie `thumbnail`, pokazującą identyfikatory z dyskusji, chat, cache, pobranie `checkout_form` i znalezione obrazy w pozycjach zamówienia Allegro.
+- Gdy miniatura zgłoszenia nie załaduje się w przeglądarce, moduł loguje w konsoli link diagnostyczny i wynik diagnostyki JSON.
+
 ## [0.2.74] - 2026-05-28
 - Miniatury dyskusji i reklamacji korzystają sztywno z obrazów w zamówieniu Allegro (`checkout_form_id` / `lineItems`), z proxy dla chronionych URL-i API Allegro i bez fallbacku do produktów PrestaShop.
 
