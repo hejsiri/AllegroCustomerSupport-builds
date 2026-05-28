@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.86] - 2026-05-28
+- Dodano fallback dla starych checkout formów bez EAN/sygnatur: po znalezieniu zamówienia PrestaShop moduł dopasowuje pozycję po podobieństwie nazwy z Allegro do `order_detail.product_name`, a dla zamówień z jednym produktem używa tej jednej pozycji.
+- Odświeżono klucze cache miniatur, żeby nie mieszać wyników ze starszą logiką.
+
 ## [0.2.85] - 2026-05-28
 - Uproszczono zapytania SQL wybierające obraz produktu PrestaShop zgodnie z CargoStockManager: najpierw `MIN(product_attribute_image.id_image)`, potem cover z `image`, potem najniższe `id_image`, bez ręcznego `LIMIT` w `Db::getValue()`.
 
