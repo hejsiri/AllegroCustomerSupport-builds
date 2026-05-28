@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.85] - 2026-05-28
+- Uproszczono zapytania SQL wybierające obraz produktu PrestaShop zgodnie z CargoStockManager: najpierw `MIN(product_attribute_image.id_image)`, potem cover z `image`, potem najniższe `id_image`, bez ręcznego `LIMIT` w `Db::getValue()`.
+
 ## [0.2.84] - 2026-05-28
 - Miniatury PrestaShop budują teraz bezpośredni legacy URL `/img/p/.../{id_image}-small_default.jpg`, zgodny z realnymi adresami obrazów w sklepie.
 - Diagnostyka miniatur pokazuje `legacy_url`, żeby łatwo porównać wygenerowany adres z adresem pliku w PrestaShop.
