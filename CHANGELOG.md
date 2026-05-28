@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.100] - 2026-05-29
+- W nagłówku reklamacji podlinkowano numer zamówienia Allegro do Sales Center oraz referencję zamówienia sklepowego do widoku zamówienia w PrestaShop.
+- Usunięto z prawej strony nagłówka reklamacji dodatkowe etykiety typu `Czat aktywny` i `Reklamacja ustawowa`, zostawiając sam status.
+- Na liście reklamacji i dyskusji przeniesiono etykietę typu zgłoszenia oraz przycisk `DIAG` pod miniaturę produktu.
+
 ## [0.2.99] - 2026-05-28
 - Dodano zmienną `{claim_product_name}` dla gotowych odpowiedzi, uzupełnianą nazwą reklamowanego produktu z pozycji zamówienia dopasowanej po `offer_id`.
 - Dodano aliasy `{claimed_product_name}`, `{issue_product_name}` i `{product_name}` oraz pokazano nową zmienną w podpowiedzi sekcji gotowych odpowiedzi.
