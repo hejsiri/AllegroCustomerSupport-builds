@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.80] - 2026-05-28
+- Usunięto przestarzałe wywołania Allegro `GET /sale/offers/{id}` z diagnostyki i fallbacku miniatur, aby nie pokazywać mylącego komunikatu `ACCESS_DENIED`.
+- Diagnostyka dopasowania sygnatury PrestaShop pokazuje teraz jawnie `source: not_found` oraz sprawdzane pola, gdy EAN/reference/SKU nie pasuje do produktu ani kombinacji.
+
 ## [0.2.79] - 2026-05-28
 - Reklamacje i dyskusje preferują miniaturę z PrestaShop po sygnaturze pozycji zamówienia przed każdym URL-em obrazu z Allegro.
 - Cache miniatur zgłoszeń przeniesiono na klucze `order-v5`, aby odciąć wcześniejsze wpisy zapisane z URL-ami Allegro.
