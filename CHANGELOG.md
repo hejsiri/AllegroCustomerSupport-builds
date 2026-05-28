@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.84] - 2026-05-28
+- Miniatury PrestaShop budują teraz bezpośredni legacy URL `/img/p/.../{id_image}-small_default.jpg`, zgodny z realnymi adresami obrazów w sklepie.
+- Diagnostyka miniatur pokazuje `legacy_url`, żeby łatwo porównać wygenerowany adres z adresem pliku w PrestaShop.
+
 ## [0.2.83] - 2026-05-28
 - Naprawiono budowanie URL miniatur PrestaShop: moduł używa teraz formatu `id_product-id_image`, szuka `link_rewrite` z fallbackiem poza bieżącym sklepem/językiem i pokazuje szczegóły wyboru obrazu w diagnostyce.
 - Dopasowanie EAN/reference/SKU w PrestaShop ignoruje przypadkowe spacje w polach produktu, kombinacji i szczegółów zamówienia.
