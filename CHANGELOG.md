@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.96] - 2026-05-28
+- W formularzach odpowiedzi (wiadomości, dyskusje, reklamacje) dodano uchwyt z trzema kropkami do powiększania i zwijania pola wiadomości.
+- Kliknięcie uchwytu przełącza tryb edytora bez utraty treści i utrzymuje wygodne fokusowanie kursora.
+
 ## [0.2.95] - 2026-05-28
 - Naprawiono brakujące mapowanie mojibake `ĹĽ` -> `ż` w panelu aktualizacji, dzięki czemu opisy zmian poprawnie pokazują słowa typu `można` i `niezależnie`.
 - Dodano fallback naprawy dla urwanych sekwencji CP1250 (np. `osobnÄ`), żeby komunikaty aktualizacji nie gubiły polskich znaków.
