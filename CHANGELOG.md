@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.101] - 2026-05-29
+- Zmieniono techniczny identyfikator modułu z `allegroautoresponder` na `allegrocustomerservice`: główna klasa, plik modułu, namespace usług, kontrolery, linki frontowe, domeny tłumaczeń oraz paczka ZIP używają nowej nazwy.
+- Dodano mostki kompatybilności dla starej nazwy modułu i starych kontrolerów, żeby aktualizacja istniejącej instalacji nie gubiła wejść BO ani endpointów frontowych podczas przejścia.
+- Skrypt release buduje teraz paczkę instalacyjną z katalogiem `allegrocustomerservice/`; prefiksy konfiguracji `AAR_` i tabele `allegro_ar_*` pozostają bez zmian, żeby zachować dotychczasowe dane.
+
 ## [0.2.100] - 2026-05-29
 - W nagłówku reklamacji podlinkowano numer zamówienia Allegro do Sales Center oraz referencję zamówienia sklepowego do widoku zamówienia w PrestaShop.
 - Usunięto z prawej strony nagłówka reklamacji dodatkowe etykiety typu `Czat aktywny` i `Reklamacja ustawowa`, zostawiając sam status.
