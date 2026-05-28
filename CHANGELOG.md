@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.79] - 2026-05-28
+- Reklamacje i dyskusje preferują miniaturę z PrestaShop po sygnaturze pozycji zamówienia przed każdym URL-em obrazu z Allegro.
+- Cache miniatur zgłoszeń przeniesiono na klucze `order-v5`, aby odciąć wcześniejsze wpisy zapisane z URL-ami Allegro.
+
 ## [0.2.78] - 2026-05-28
 - Diagnostyka miniatur pokazuje sygnaturę pozycji zamówienia Allegro (`offer.external.id`) oraz wszystkie kandydaty identyfikatorów używane do dopasowania produktu.
 - Miniatury zgłoszeń próbują teraz użyć sygnatury z pozycji zamówienia do znalezienia obrazu produktu lub kombinacji w PrestaShop po EAN/reference/SKU, zanim przejdą do obrazu z oferty Allegro.
