@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.68] - 2026-05-28
+- Miniatury dyskusji i reklamacji opierają się wyłącznie na produktach PrestaShop, bez fallbacku do obrazów Allegro.
+
 ## [0.2.67] - 2026-05-28
 - Zabezpieczono lokalne zapytania miniatur PrestaShop, aby błąd SQL fallbacku nie blokował pobierania danych Allegro.
 
