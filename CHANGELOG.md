@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.71] - 2026-05-28
+- Przebudowano resolver miniatur zgłoszeń: `checkout_form_id` mapuje zamówienie PrestaShop, a `offer_id` wybiera konkretną pozycję po referencji, EAN/GTIN, SKU, nazwie lub zapisanym payloadzie checkout form.
+
 ## [0.2.70] - 2026-05-28
 - Miniatury zgłoszeń z gotowym `checkout_form_id` szukają teraz bezpośrednio lokalnego zamówienia PrestaShop przed wywołaniami API Allegro.
 
