@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.78] - 2026-05-28
+- Diagnostyka miniatur pokazuje sygnaturę pozycji zamówienia Allegro (`offer.external.id`) oraz wszystkie kandydaty identyfikatorów używane do dopasowania produktu.
+- Miniatury zgłoszeń próbują teraz użyć sygnatury z pozycji zamówienia do znalezienia obrazu produktu lub kombinacji w PrestaShop po EAN/reference/SKU, zanim przejdą do obrazu z oferty Allegro.
+- Dopasowanie wielopozycyjnych zamówień nie przeskakuje już na inną pozycję, gdy zgłoszenie ma znane `offer_id`.
+- Cache miniatur zgłoszeń przeniesiono na klucze `order-v4`, aby preferować nowy wynik z PrestaShop po sygnaturze.
+
 ## [0.2.77] - 2026-05-28
 - Miniatury zgłoszeń używają zamówienia Allegro do wyboru właściwej pozycji, a gdy `checkout_form.lineItems` nie zawiera obrazów, dociągają miniaturę z oferty/produktu Allegro dla tej pozycji.
 - Cache miniatur zgłoszeń przeniesiono na klucze `order-v3`, aby ominąć wcześniejsze puste lub błędne wyniki.
