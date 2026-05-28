@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.70] - 2026-05-28
+- Miniatury zgłoszeń z gotowym `checkout_form_id` szukają teraz bezpośrednio lokalnego zamówienia PrestaShop przed wywołaniami API Allegro.
+
 ## [0.2.69] - 2026-05-28
 - Lazy loader miniatur zgłoszeń używa teraz chatu do znalezienia zamówienia PrestaShop, gdy lista Allegro zawiera tylko `issue_id`.
 
