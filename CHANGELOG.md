@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.95] - 2026-05-28
+- Naprawiono brakujące mapowanie mojibake `ĹĽ` -> `ż` w panelu aktualizacji, dzięki czemu opisy zmian poprawnie pokazują słowa typu `można` i `niezależnie`.
+- Dodano fallback naprawy dla urwanych sekwencji CP1250 (np. `osobnÄ`), żeby komunikaty aktualizacji nie gubiły polskich znaków.
+
 ## [0.2.94] - 2026-05-28
 - Formularz odpowiedzi w dyskusjach i reklamacjach używa teraz ikony listy (hamburger) osadzonej w polu tekstowym zamiast osobnego przycisku `Gotowiec`.
 - Dodano osobną sekcję `Gotowe odpowiedzi (ręczne)` w ustawieniach modułu, gdzie można tworzyć własne gotowce niezależnie od reguł automatycznych.
