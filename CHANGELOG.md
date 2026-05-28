@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.73] - 2026-05-28
+- Gdy `checkout_form_id` pozwala ustalić ofertę, miniatura zgłoszenia jest pobierana z obrazu oferty Allegro zamiast z mapowania produktu PrestaShop.
+
 ## [0.2.72] - 2026-05-28
 - Miniatury dyskusji i reklamacji są pobierane najpierw z pozycji zamówienia Allegro (`checkout_form_id` + `offer_id`), czyli z tego samego źródła co poprawne miniatury w zamówieniu.
 
