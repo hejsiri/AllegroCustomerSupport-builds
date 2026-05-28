@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.76] - 2026-05-28
+- Diagnostyka miniatur zgłoszeń jest teraz widoczna w panelu jako przycisk `diag` przy miniaturze oraz jako lista linków w konsoli przeglądarki.
+
 ## [0.2.75] - 2026-05-28
 - Dodano diagnostykę miniatur zgłoszeń w endpointcie `thumbnail`, pokazującą identyfikatory z dyskusji, chat, cache, pobranie `checkout_form` i znalezione obrazy w pozycjach zamówienia Allegro.
 - Gdy miniatura zgłoszenia nie załaduje się w przeglądarce, moduł loguje w konsoli link diagnostyczny i wynik diagnostyki JSON.
