@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.103] - 2026-05-29
+- Dodano bezpieczny migrator katalogu modułu z `allegroautoresponder` do `allegrocustomerservice`: przenosi katalog FTP, aktualizuje wpis modułu w bazie, przestawia taby BO i poprawia zapisany URL OAuth.
+- W ustawieniach pojawia się panel porządkowania tylko wtedy, gdy moduł działa jeszcze ze starej nazwy albo stary katalog nadal istnieje na FTP.
+
 ## [0.2.102] - 2026-05-29
 - Naprawiono renderowanie konfiguracji po przejściu na `allegrocustomerservice`: szablon `configure.tpl` jest teraz szukany względem faktycznie załadowanego pliku wejściowego modułu, więc działa też po aktualizacji istniejącej instalacji ze starego katalogu.
 
