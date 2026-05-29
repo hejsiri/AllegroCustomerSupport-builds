@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.104] - 2026-05-29
+- Zabezpieczono główną klasę modułu, service’y, updater i kontrolery przed podwójnym załadowaniem, gdy PrestaShop widzi jednocześnie katalog `allegroautoresponder` i `allegrocustomerservice`.
+- Poprawka usuwa fatal error `Cannot declare class AllegroCustomerService, because the name is already in use` podczas przejściowej migracji katalogu.
+
 ## [0.2.103] - 2026-05-29
 - Dodano bezpieczny migrator katalogu modułu z `allegroautoresponder` do `allegrocustomerservice`: przenosi katalog FTP, aktualizuje wpis modułu w bazie, przestawia taby BO i poprawia zapisany URL OAuth.
 - W ustawieniach pojawia się panel porządkowania tylko wtedy, gdy moduł działa jeszcze ze starej nazwy albo stary katalog nadal istnieje na FTP.
