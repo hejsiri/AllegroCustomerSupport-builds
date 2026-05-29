@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.108] - 2026-05-29
+- Naprawiono instalację po ręcznej migracji modułu na sklepach, gdzie część tabel powiązań modułu istnieje, ale nie ma kolumny `id_module`; cleanup starych wpisów sprawdza teraz kolumny każdej tabeli przed wykonaniem `DELETE`.
+
 ## [0.2.107] - 2026-05-29
 - Naprawiono instalację po ręcznej migracji modułu, gdy tabela `hook_module_exceptions` w danej wersji PrestaShop nie ma kolumny `id_hook_module`; czyszczenie starych wpisów wykrywa teraz dostępne kolumny i używa właściwego wariantu zapytania.
 
