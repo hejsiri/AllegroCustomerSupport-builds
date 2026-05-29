@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.110] - 2026-05-29
+- Posprzątano runtime po migracji technicznej nazwy modułu: usunięto panel przenoszenia starego katalogu, automatyczne cleanupy legacy i ciche naprawiacze uruchamiane przy każdym wejściu do BO.
+- Menu BO opiera się teraz wyłącznie na właściwych kontrolerach `AdminAllegroCustomerService*`, a upgrade tylko odświeża standardowe taby i hooki modułu.
+- Usunięto stare mostki `AllegroAutoresponder*` oraz plik wejściowy `allegroautoresponder.php` z paczki instalacyjnej.
+
 ## [0.2.109] - 2026-05-29
 - Naprawiono brak pozycji modułu w menu BO po migracji: instalacja i aktualizacja ponownie tworzą/naprawiają taby `AdminAllegroCustomerService*`, ustawiają `active`/`enabled` i odświeżają uprawnienia profilu.
 - Dodano ciche samonaprawianie menu w hooku Back Office, żeby moduł odtworzył brakujące pozycje także po wcześniejszej niepełnej instalacji.
