@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.106] - 2026-05-29
+- Naprawiono błąd instalacji/porządkowania po migracji: sprawdzanie istnienia tabel nie używa już `Db::getValue('SHOW TABLES ...')`, bo PrestaShop dokleja tam `LIMIT 1`, czego MariaDB nie akceptuje dla `SHOW TABLES`.
+
 ## [0.2.105] - 2026-05-29
 - Dodano automatyczne porządkowanie starych wpisów po ręcznej instalacji `allegrocustomerservice` obok dawnego modułu: osierocone taby `AdminAllegroAutoresponder*` są usuwane albo przepinane na nowe kontrolery, a stary wpis `module` jest czyszczony, gdy istnieje już nowy moduł.
 - Naprawiono przypadek, w którym BO pokazywało `Kontroler AdminAllegroAutoresponderSettings jest niedostępny bądź uszkodzony` po zmianie nazwy katalogu starego modułu.
