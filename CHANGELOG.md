@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.102] - 2026-05-29
+- Naprawiono renderowanie konfiguracji po przejściu na `allegrocustomerservice`: szablon `configure.tpl` jest teraz szukany względem faktycznie załadowanego pliku wejściowego modułu, więc działa też po aktualizacji istniejącej instalacji ze starego katalogu.
+
 ## [0.2.101] - 2026-05-29
 - Zmieniono techniczny identyfikator modułu z `allegroautoresponder` na `allegrocustomerservice`: główna klasa, plik modułu, namespace usług, kontrolery, linki frontowe, domeny tłumaczeń oraz paczka ZIP używają nowej nazwy.
 - Dodano mostki kompatybilności dla starej nazwy modułu i starych kontrolerów, żeby aktualizacja istniejącej instalacji nie gubiła wejść BO ani endpointów frontowych podczas przejścia.
