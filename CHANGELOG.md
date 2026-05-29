@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.105] - 2026-05-29
+- Dodano automatyczne porządkowanie starych wpisów po ręcznej instalacji `allegrocustomerservice` obok dawnego modułu: osierocone taby `AdminAllegroAutoresponder*` są usuwane albo przepinane na nowe kontrolery, a stary wpis `module` jest czyszczony, gdy istnieje już nowy moduł.
+- Naprawiono przypadek, w którym BO pokazywało `Kontroler AdminAllegroAutoresponderSettings jest niedostępny bądź uszkodzony` po zmianie nazwy katalogu starego modułu.
+
 ## [0.2.104] - 2026-05-29
 - Zabezpieczono główną klasę modułu, service’y, updater i kontrolery przed podwójnym załadowaniem, gdy PrestaShop widzi jednocześnie katalog `allegroautoresponder` i `allegrocustomerservice`.
 - Poprawka usuwa fatal error `Cannot declare class AllegroCustomerService, because the name is already in use` podczas przejściowej migracji katalogu.
