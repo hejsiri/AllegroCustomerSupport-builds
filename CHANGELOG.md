@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.107] - 2026-05-29
+- Naprawiono instalację po ręcznej migracji modułu, gdy tabela `hook_module_exceptions` w danej wersji PrestaShop nie ma kolumny `id_hook_module`; czyszczenie starych wpisów wykrywa teraz dostępne kolumny i używa właściwego wariantu zapytania.
+
 ## [0.2.106] - 2026-05-29
 - Naprawiono błąd instalacji/porządkowania po migracji: sprawdzanie istnienia tabel nie używa już `Db::getValue('SHOW TABLES ...')`, bo PrestaShop dokleja tam `LIMIT 1`, czego MariaDB nie akceptuje dla `SHOW TABLES`.
 
