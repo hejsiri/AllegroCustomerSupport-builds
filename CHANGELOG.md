@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.109] - 2026-05-29
+- Naprawiono brak pozycji modułu w menu BO po migracji: instalacja i aktualizacja ponownie tworzą/naprawiają taby `AdminAllegroCustomerService*`, ustawiają `active`/`enabled` i odświeżają uprawnienia profilu.
+- Dodano ciche samonaprawianie menu w hooku Back Office, żeby moduł odtworzył brakujące pozycje także po wcześniejszej niepełnej instalacji.
+
 ## [0.2.108] - 2026-05-29
 - Naprawiono instalację po ręcznej migracji modułu na sklepach, gdzie część tabel powiązań modułu istnieje, ale nie ma kolumny `id_module`; cleanup starych wpisów sprawdza teraz kolumny każdej tabeli przed wykonaniem `DELETE`.
 
