@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.111] - 2026-06-09
+- Poprawiono kody powodów zwrotu pieniędzy do wartości akceptowanych przez Allegro API: `PRODUCT_NOT_AVAILABLE`, `PAID_VALUE_TOO_LOW`, `OVERPAID`, `CANCELLED_BY_BUYER`, `NOT_COLLECTED`.
+- Dodano mapowanie starych aliasów z formularza zwrotu pieniędzy na aktualne kody API, żeby uniknąć błędu 422 przy otwartym wcześniej formularzu.
+
 ## [0.2.110] - 2026-05-29
 - Posprzątano runtime po migracji technicznej nazwy modułu: usunięto panel przenoszenia starego katalogu, automatyczne cleanupy legacy i ciche naprawiacze uruchamiane przy każdym wejściu do BO.
 - Menu BO opiera się teraz wyłącznie na właściwych kontrolerach `AdminAllegroCustomerService*`, a upgrade tylko odświeża standardowe taby i hooki modułu.
