@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.118] - 2026-06-11
+- Oczyszczono paczkę instalacyjną z plików deweloperskich: `scripts/`, `config/`, `.gitignore` oraz dokumentów automatyzacji release.
+- Aktualizator usuwa pozostałości po wcześniejszych paczkach z katalogu modułu, w tym stary generator licencji i skrypty release, bez dotykania lokalnego `license.php`.
+
 ## [0.2.117] - 2026-06-11
 - Usunięto generator licencji z kodu i paczki modułu; płatny moduł zawiera wyłącznie walidację dostarczonego pliku `license.php`.
 - README doprecyzowuje, że licencję generuje i dostarcza wydawca modułu, a nie instalacja klienta.
