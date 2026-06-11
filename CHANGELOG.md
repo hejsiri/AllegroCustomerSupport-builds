@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.113] - 2026-06-11
+- Wyłączono sugestie haseł i autouzupełnianie Safari w polach wyszukiwania zgłoszeń oraz zwrotów.
+- Pola wyszukiwania używają teraz typu `search` i neutralnych atrybutów autofill, żeby przeglądarka nie traktowała ich jak loginu.
+
 ## [0.2.112] - 2026-06-11
 - Dodano wyszukiwarkę nad reklamacjami i dyskusjami, dopasowaną układem do filtrów zwrotów towarów.
 - Wyszukiwanie zgłoszeń obejmuje m.in. numer zgłoszenia, zamówienie, ofertę, login kupującego, temat, status i dane z payloadu Allegro.
