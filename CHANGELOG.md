@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.116] - 2026-06-11
+- Dodano lokalną stronę WWW `tools/license-generator/` do wygodnego generowania i pobierania plików `license.php`.
+- CLI i strona WWW korzystają ze wspólnej biblioteki generatora licencji, a katalog `tools/` jest pomijany przy budowaniu paczki modułu.
+
 ## [0.2.115] - 2026-06-11
 - Dodano uniwersalny generator licencji `scripts/generate_license.php` dla modułów używających podpisanych kluczy w formacie CargoStockManager.
 - Opisano generowanie `license.php` w README oraz dodano ignorowanie lokalnego `config/license_private.pem`.
