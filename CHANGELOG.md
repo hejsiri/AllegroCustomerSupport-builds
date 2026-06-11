@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.117] - 2026-06-11
+- Usunięto generator licencji z kodu i paczki modułu; płatny moduł zawiera wyłącznie walidację dostarczonego pliku `license.php`.
+- README doprecyzowuje, że licencję generuje i dostarcza wydawca modułu, a nie instalacja klienta.
+
 ## [0.2.116] - 2026-06-11
 - Dodano lokalną stronę WWW `tools/license-generator/` do wygodnego generowania i pobierania plików `license.php`.
 - CLI i strona WWW korzystają ze wspólnej biblioteki generatora licencji, a katalog `tools/` jest pomijany przy budowaniu paczki modułu.
