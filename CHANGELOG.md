@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.112] - 2026-06-11
+- Dodano wyszukiwarkę nad reklamacjami i dyskusjami, dopasowaną układem do filtrów zwrotów towarów.
+- Wyszukiwanie zgłoszeń obejmuje m.in. numer zgłoszenia, zamówienie, ofertę, login kupującego, temat, status i dane z payloadu Allegro.
+
 ## [0.2.111] - 2026-06-09
 - Poprawiono kody powodów zwrotu pieniędzy do wartości akceptowanych przez Allegro API: `PRODUCT_NOT_AVAILABLE`, `PAID_VALUE_TOO_LOW`, `OVERPAID`, `CANCELLED_BY_BUYER`, `NOT_COLLECTED`.
 - Dodano mapowanie starych aliasów z formularza zwrotu pieniędzy na aktualne kody API, żeby uniknąć błędu 422 przy otwartym wcześniej formularzu.
