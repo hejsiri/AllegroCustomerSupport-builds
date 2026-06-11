@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.114] - 2026-06-11
+- Dodano licencjonowanie modułu w modelu CargoStockManager: podpisany klucz w `license.php`, weryfikacja przez `keys/license_public.pem`, sprawdzanie modułu, domeny i daty wygaśnięcia.
+- Panel ustawień pokazuje dane licencji, a funkcje modułu, CRON i akcje administracyjne są blokowane, gdy licencja jest nieważna lub nieobecna.
+- Aktualizator zachowuje lokalny plik `license.php` podczas instalacji nowej wersji.
+
 ## [0.2.113] - 2026-06-11
 - Wyłączono sugestie haseł i autouzupełnianie Safari w polach wyszukiwania zgłoszeń oraz zwrotów.
 - Pola wyszukiwania używają teraz typu `search` i neutralnych atrybutów autofill, żeby przeglądarka nie traktowała ich jak loginu.
