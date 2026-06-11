@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.119] - 2026-06-11
+- Dodano skrypt aktualizacji PrestaShop, który usuwa z katalogu modułu pozostałości po wcześniejszych paczkach: `scripts/`, `tools/`, techniczny katalog `config/`, `.gitignore` oraz dokumenty automatyzacji release.
+
 ## [0.2.118] - 2026-06-11
 - Oczyszczono paczkę instalacyjną z plików deweloperskich: `scripts/`, `config/`, `.gitignore` oraz dokumentów automatyzacji release.
 - Aktualizator usuwa pozostałości po wcześniejszych paczkach z katalogu modułu, w tym stary generator licencji i skrypty release, bez dotykania lokalnego `license.php`.
