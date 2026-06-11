@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.120] - 2026-06-11
+- Dodano usuwanie starego pliku zgodności `allegroautoresponder.php` z katalogu modułu podczas aktualizacji.
+
 ## [0.2.119] - 2026-06-11
 - Dodano skrypt aktualizacji PrestaShop, który usuwa z katalogu modułu pozostałości po wcześniejszych paczkach: `scripts/`, `tools/`, techniczny katalog `config/`, `.gitignore` oraz dokumenty automatyzacji release.
 
