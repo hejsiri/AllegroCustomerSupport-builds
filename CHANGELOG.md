@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.115] - 2026-06-11
+- Dodano uniwersalny generator licencji `scripts/generate_license.php` dla modułów używających podpisanych kluczy w formacie CargoStockManager.
+- Opisano generowanie `license.php` w README oraz dodano ignorowanie lokalnego `config/license_private.pem`.
+
 ## [0.2.114] - 2026-06-11
 - Dodano licencjonowanie modułu w modelu CargoStockManager: podpisany klucz w `license.php`, weryfikacja przez `keys/license_public.pem`, sprawdzanie modułu, domeny i daty wygaśnięcia.
 - Panel ustawień pokazuje dane licencji, a funkcje modułu, CRON i akcje administracyjne są blokowane, gdy licencja jest nieważna lub nieobecna.
