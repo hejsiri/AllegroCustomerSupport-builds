@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.164] - 2026-07-12
+- Przycisk ręcznego uruchamiania skanowania ma teraz niebieski styl głównej akcji oraz ikonę odświeżania.
+
 ## [0.2.163] - 2026-07-12
 - Panel gotowych odpowiedzi korzysta teraz z tej samej natywnej konstrukcji `panel` i nagłówka `h3` co pozostałe sekcje ustawień PrestaShop.
 - Dodano ikony do nagłówków: gotowe odpowiedzi, informacje o module, reguły automatycznych odpowiedzi oraz ostatnie logi.
