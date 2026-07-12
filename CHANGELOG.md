@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.161] - 2026-07-12
+- Przyciski przy adresie CRON korzystają ponownie ze standardowego układu grupy pól Bootstrap i mają dokładnie tę samą wysokość co pole URL.
+
 ## [0.2.160] - 2026-07-12
 - Odpowiedź JSON zadania CRON zawiera teraz bezpieczne podsumowanie: liczbę sprawdzonych wątków, wiadomości klientów, dopasowań, wysłanych i testowych odpowiedzi, pominięć oraz błędów.
 - Podsumowanie nie ujawnia treści wiadomości, danych klientów ani szczegółów zamówień.
