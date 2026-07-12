@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.160] - 2026-07-12
+- Odpowiedź JSON zadania CRON zawiera teraz bezpieczne podsumowanie: liczbę sprawdzonych wątków, wiadomości klientów, dopasowań, wysłanych i testowych odpowiedzi, pominięć oraz błędów.
+- Podsumowanie nie ujawnia treści wiadomości, danych klientów ani szczegółów zamówień.
+
 ## [0.2.159] - 2026-07-12
 - Przyciski kopiowania i otwierania adresu CRON mają teraz pełną wysokość pola tekstowego oraz wyśrodkowane ikony i etykiety.
 
