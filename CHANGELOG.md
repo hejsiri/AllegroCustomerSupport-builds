@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.170] - 2026-07-12
+- Po wejściu do ustawień moduł automatycznie sprawdza dostępność aktualizacji i pokazuje wynik na głównym przycisku aktualizacji.
+- Automatyczne sprawdzenie nie instaluje aktualizacji; instalacja nadal wymaga świadomego kliknięcia przycisku.
+
 ## [0.2.169] - 2026-07-12
 - Zmniejszono wysokość pola adresu CRON i doklejonych przycisków z 52 do 42 px, bez zmiany wielkości tekstu oraz ikon.
 
