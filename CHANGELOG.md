@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.159] - 2026-07-12
+- Przyciski kopiowania i otwierania adresu CRON mają teraz pełną wysokość pola tekstowego oraz wyśrodkowane ikony i etykiety.
+
 ## [0.2.158] - 2026-07-12
 - Dodano niezależny endpoint CRON-u w katalogu modułu, omijający niedziałający routing kontrolerów frontowych PrestaShop.
 - Adres CRON-u w ustawieniach jest prezentowany w polu tekstowym z przyciskami kopiowania i otwierania w nowej karcie.
