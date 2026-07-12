@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.169] - 2026-07-12
+- Zmniejszono wysokość pola adresu CRON i doklejonych przycisków z 52 do 42 px, bez zmiany wielkości tekstu oraz ikon.
+
 ## [0.2.168] - 2026-07-12
 - Przycisk kopiowania adresu CRON jest domyślnie niebieski z białym tekstem i ikoną.
 - Po skopiowaniu zielony stan „Skopiowano” zachowuje biały tekst i ikonę również po najechaniu oraz ustawieniu fokusu.
