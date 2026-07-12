@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.172] - 2026-07-12
+- Opis funkcji „Włącz moduł” przeniesiono spod podpowiedzi po najechaniu bezpośrednio pod przełącznik, zgodnie z wyglądem pola trybu testowego.
+
 ## [0.2.171] - 2026-07-12
 - Do etykiety „Włącz moduł” dodano podpowiedź wyjaśniającą, że przełącznik steruje automatycznym skanowaniem i odpowiedziami przez CRON, ale nie wyłącza panelu ani funkcji ręcznych.
 
