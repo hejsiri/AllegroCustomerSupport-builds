@@ -1,5 +1,130 @@
 # Changelog
 
+## [0.2.157] - 2026-07-12
+- Odświeżono panel gotowych odpowiedzi: dodano spójny nagłówek, czytelne karty, podpowiedź zmiennych i responsywny układ mobilny.
+- Adres CRON w ustawieniach korzysta teraz z bezpośredniej trasy `index.php`, niezależnej od przyjaznych adresów i prefiksu języka.
+
+## [0.2.156] - 2026-07-10
+- Wyrównano checkboxy filtrów wiadomości i ich etykiety w jednym wierszu.
+- Etykiety `Nieprzeczytane` i `Wymaga odpowiedzi` mają normalną grubość tekstu niezależnie od stylów panelu administracyjnego.
+
+## [0.2.155] - 2026-07-10
+- Aktywne filtry wiadomości przeszukują po 80 wątków na każdą paczkę lazy load zamiast tylko 20, dzięki czemu odnajdują także starsze rozmowy wymagające odpowiedzi.
+- Dodano twardy limit 400 skanowanych wątków oraz zachowano cache stanu ostatniej wiadomości, aby ograniczyć obciążenie API Allegro i panelu.
+
+## [0.2.154] - 2026-07-10
+- Filtry wiadomości uwzględniają kolejne paczki lazy load także wtedy, gdy pierwsza paczka zawiera zbyt mało wyników, aby lista miała pasek przewijania.
+- Przy aktywnym filtrze krótka lista automatycznie pobiera jedną następną paczkę; dalsze paczki są pobierane przy przewijaniu lub ruchu kółkiem w dół, bez zapętlenia.
+
+## [0.2.153] - 2026-07-10
+- Dodano rzeczywisty mechanizm wykrywania wiadomości wymagających odpowiedzi na podstawie `author.isInterlocutor` najnowszej wiadomości w każdym wątku.
+- Stan jest cache'owany względem `lastMessageDateTime`, dzięki czemu API jest ponownie sprawdzane dopiero po pojawieniu się nowej wiadomości.
+- Wątki wymagające reakcji otrzymują oznaczenie `wymaga odpowiedzi`, a filtr `Bez mojej odpowiedzi` korzysta z tego samego stanu.
+
+## [0.2.152] - 2026-07-10
+- Tekst etykiet filtrów wiadomości używa normalnej grubości czcionki zamiast pogrubienia.
+
+## [0.2.151] - 2026-07-10
+- Powiększono tekst i checkboxy filtrów wiadomości oraz zwiększono odstępy i kontrast zaznaczenia dla lepszej czytelności.
+
+## [0.2.150] - 2026-07-10
+- Usunięto zapętlanie lazy load wiadomości przy aktywnych filtrach: kolejne paczki nie są już automatycznie pobierane przy starcie ani natychmiast po poprzedniej odpowiedzi.
+- Następna paczka wątków jest pobierana dopiero po rzeczywistym przewinięciu listy do końca; przycisk pozostaje ręcznym fallbackiem.
+
+## [0.2.149] - 2026-07-10
+- Usunięto przycisk `Wyczyść` z filtrów wiadomości.
+- Lista wiadomości pobiera początkowo 20 wątków, a kolejne paczki są dopisywane bez przeładowania widoku przez mechanizm lazy load.
+
+## [0.2.148] - 2026-07-10
+- Pusty wynik filtrowania wiadomości nie usuwa już listy, wyszukiwarki ani okna rozmowy; filtry można od razu wyłączyć.
+- Filtr `Bez mojej odpowiedzi` obsługuje wątki, w których endpoint Allegro nie zwraca autora ostatniej wiadomości, używając statusu nieprzeczytania jako bezpiecznego fallbacku.
+
+## [0.2.147] - 2026-07-10
+- Filtry wiadomości `Nieprzeczytane` i `Bez mojej odpowiedzi` działają od razu po zaznaczeniu lub odznaczeniu, bez przycisku `Filtruj`.
+- Poprawiono filtr `Bez mojej odpowiedzi`: sprawdza autora ostatniej wiadomości niezależnie od tego, czy wątek został już przeczytany.
+
+## [0.2.146] - 2026-07-10
+- Przeniesiono kompaktową wyszukiwarkę i filtry wiadomości bezpośrednio nad listę w lewej kolumnie.
+- Pole `Szukaj odbiorcy` otrzymało neutralne atrybuty formularza blokujące sugestie haseł i autouzupełnianie menedżerów logowania.
+
+## [0.2.145] - 2026-07-10
+- Naprawiono odczyt cache miniaturek `Zwrotów towarów`: lista akceptuje teraz lokalne adresy zdjęć PrestaShop w formacie `/img/p/...`, które wcześniej były poprawnie używane w szczegółach, lecz odrzucane na liście.
+
+## [0.2.144] - 2026-07-10
+- Lista `Zwrotów towarów` zapisuje teraz w swoim cache dokładny URL zwracany przez ten sam resolver produktu, którego używają poprawne miniatury w szczegółach zwrotu.
+- Podczas przygotowania listy wykorzystywany jest najpierw lokalnie zapisany checkout form, aby ograniczyć dodatkowe zapytania do Allegro.
+
+## [0.2.143] - 2026-07-10
+- Naprawiono puste miniatury na całej liście `Zwrotów towarów`: lista nie zależy już od niedziałającej trasy szczegółów zwrotu i korzysta z lekkiego resolvera `offerId + orderId`, który pobiera EAN z właściwej pozycji checkout formy.
+
+## [0.2.142] - 2026-07-10
+- Lista `Zwrotów towarów` używa teraz dokładnie tego samego resolvera pierwszego zwracanego produktu co poprawne miniatury w szczegółach zwrotu; wynik jest zapisywany w cache listy.
+
+## [0.2.141] - 2026-07-10
+- Przyspieszono ładowanie `Zwrotów towarów`: lista nie wykonuje już synchronicznie ciężkiego dopasowania każdej miniatury podczas generowania strony.
+- Dodano osobny cache miniaturek zwrotów; pełne wyszukiwanie po EAN/historycznej pozycji jest wykonywane leniwie i jego poprawny wynik jest ponownie używany.
+
+## [0.2.140] - 2026-07-10
+- Ujednolicono miniaturę zaznaczonego `Zwrotu towarów` na liście z resolverem używanym w szczegółach produktu, aby poprawnie znalezione zdjęcie po EAN/historycznej pozycji nie znikało po zaznaczeniu zwrotu.
+
+## [0.2.139] - 2026-07-10
+- W modalu `Diagnostyka API zwrotu` dodano przycisk `Kopiuj JSON` z potwierdzeniem skopiowania i fallbackiem dla starszych przeglądarek.
+
+## [0.2.138] - 2026-07-10
+- Dla miniaturek `Zwrotów towarów` dodano fallback po historycznej pozycji powiązanego zamówienia PrestaShop, dopasowanej dokładnie po `offerId`; obsługuje to produkty, których EAN zmienił się po zakupie, również w zwrotach wielopozycyjnych.
+
+## [0.2.137] - 2026-07-10
+- Zastosowano dopasowanie po EAN-13 także do dużej miniatury produktu w szczegółach `Zwrotu towarów`, dzięki czemu używa ona tego samego zdjęcia PrestaShop co pozycja na liście.
+
+## [0.2.136] - 2026-07-10
+- Resolver miniatur zwrotów rozpoznaje teraz 13-cyfrowy EAN zapisany przez Allegro w `lineItems[].offer.external.id`, m.in. `5905997750783`, i wyszukuje po nim zdjęcie produktu lub kombinacji PrestaShop.
+
+## [0.2.135] - 2026-07-10
+- Przycisk `Decyzja zwrotowa` w sekcji zwrotów otrzymał niebieski styl głównej akcji.
+
+## [0.2.134] - 2026-07-10
+- W `Zwrotach towarów` miniatura jest dobierana priorytetowo po EAN-13 zwracanej pozycji, dopasowanym z danych zwrotu, pozycji checkout formy lub oferty Allegro do produktu/kombinacji PrestaShop.
+
+## [0.2.133] - 2026-07-10
+- Poprawiono brakujące miniatury wyłącznie w `Zwrotach towarów`: lista może teraz leniwie pobrać pełne szczegóły zwrotu i znaleźć zdjęcie po pozycji, ofercie, checkout formie lub powiązanym zamówieniu PrestaShop.
+
+## [0.2.132] - 2026-07-10
+- Dodano kompaktowy filtr nad listą wiadomości: wyszukiwanie po loginie odbiorcy oraz opcje `Nieprzeczytane` i `Bez mojej odpowiedzi`.
+
+## [0.2.131] - 2026-07-10
+- Usunięto zbędny podtytuł `Wątek Allegro` z nagłówka rozmowy w wiadomościach.
+
+## [0.2.130] - 2026-07-10
+- Usunięto szare tło avatarów na liście wiadomości; zdjęcie lub inicjał są wyświetlane na przezroczystym tle.
+
+## [0.2.129] - 2026-07-10
+- Nieodczytane wątki na liście wiadomości są wyróżniane pogrubionym loginem, datą i podglądem wiadomości bez względu na autora ostatniej odpowiedzi.
+
+## [0.2.128] - 2026-07-10
+- Dodano okrągłe avatary kupujących na liście wiadomości; moduł pokazuje zdjęcie profilowe zwrócone przez Allegro, a przy jego braku inicjał loginu.
+
+## [0.2.127] - 2026-07-10
+- Usunięto powtórzone wiersze `Zamówienie Allegro` i `Zamówienie w sklepie` z karty `Zamówienie i produkt`; dane pozostają widoczne w nagłówku reklamacji.
+
+## [0.2.126] - 2026-07-10
+- Przeniesiono kod kraju w danych dostawy na koniec wiersza z kodem pocztowym i miastem, np. `41-813 Zabrze PL`.
+
+## [0.2.125] - 2026-07-10
+- Uodporniono tłumaczenie `Not as described` na niewidoczne separatory oraz warianty ze spacjami, myślnikami i podkreśleniami zwracane przez Allegro.
+
+## [0.2.124] - 2026-07-10
+- Dodano polskie tłumaczenie powodu i tematu reklamacji `Not as described` jako `Produkt niezgodny z opisem`.
+
+## [0.2.123] - 2026-07-10
+- Miniatury reklamacji są teraz rozwiązywane bezpośrednio podczas renderowania listy z powiązanego zamówienia PrestaShop, bez uzależniania wszystkich obrazów od dodatkowego żądania lazy-load.
+
+## [0.2.122] - 2026-07-10
+- Poprawiono strukturę paczki instalacyjnej: katalog główny ZIP jest zgodny z techniczną nazwą modułu `allegrocustomerservice`.
+
+## [0.2.121] - 2026-07-10
+- Usunięto techniczny przycisk `DIAG` spod miniatur na listach reklamacji i dyskusji; diagnostyka miniatur nie jest już eksponowana w interfejsie obsługi klienta.
+- Uzupełniono dobór miniatur reklamacji o bezpieczny fallback z powiązanego zamówienia PrestaShop, gdy Allegro nie zwraca pełnych identyfikatorów pozycji; odświeżono również klucze cache miniatur.
+
 ## [0.2.120] - 2026-06-11
 - Dodano usuwanie starego pliku zgodności `allegroautoresponder.php` z katalogu modułu podczas aktualizacji.
 
