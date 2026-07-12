@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.167] - 2026-07-12
+- Pole adresu CRON i doklejone przyciski korzystają teraz z niezależnego układu flex zamiast konfliktującego `input-group` panelu administracyjnego.
+- Wymuszono identyczną wysokość 52 px, wspólne obramowanie oraz pionowe wyśrodkowanie zawartości pola i przycisków.
+
 ## [0.2.166] - 2026-07-12
 - Gotowe odpowiedzi są teraz prezentowane jako nieedytowalna lista ze statusem, nazwą i skróconym podglądem treści.
 - Dodawanie i edycja gotowej odpowiedzi odbywają się we wspólnym oknie modalnym, a zapis jest wykonywany bezpośrednio z modala.
