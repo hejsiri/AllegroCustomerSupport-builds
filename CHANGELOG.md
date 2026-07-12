@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.173] - 2026-07-12
+- Zastąpiono nieaktualne README kompletną polską dokumentacją modułu: funkcje, instalacja, autoryzacja, wiadomości, zgłoszenia, zwroty, ustawienia, szablony, autoresponder, CRON, logi, licencja, aktualizacje, bezpieczeństwo i diagnostyka.
+
 ## [0.2.172] - 2026-07-12
 - Opis funkcji „Włącz moduł” przeniesiono spod podpowiedzi po najechaniu bezpośrednio pod przełącznik, zgodnie z wyglądem pola trybu testowego.
 
