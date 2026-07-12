@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.174] - 2026-07-12
+- Nagłówek „Rozmowa z…” w sekcji wiadomości jest teraz linkiem otwierającym odpowiadający wątek w Centrum Wiadomości Allegro w nowej karcie.
+- Link korzysta z bezpośredniej trasy Sales Center `/message-center/messages/thread/{threadId}`.
+
 ## [0.2.173] - 2026-07-12
 - Zastąpiono nieaktualne README kompletną polską dokumentacją modułu: funkcje, instalacja, autoryzacja, wiadomości, zgłoszenia, zwroty, ustawienia, szablony, autoresponder, CRON, logi, licencja, aktualizacje, bezpieczeństwo i diagnostyka.
 
