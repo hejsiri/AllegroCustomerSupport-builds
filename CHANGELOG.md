@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.166] - 2026-07-12
+- Gotowe odpowiedzi są teraz prezentowane jako nieedytowalna lista ze statusem, nazwą i skróconym podglądem treści.
+- Dodawanie i edycja gotowej odpowiedzi odbywają się we wspólnym oknie modalnym, a zapis jest wykonywany bezpośrednio z modala.
+- Usuwanie wpisu wymaga potwierdzenia i od razu zapisuje zaktualizowaną listę.
+
 ## [0.2.165] - 2026-07-12
 - Przycisk „Dodaj odpowiedź” w panelu gotowych odpowiedzi ma teraz niebieski styl głównej akcji.
 
