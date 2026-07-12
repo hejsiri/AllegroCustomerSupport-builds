@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.163] - 2026-07-12
+- Panel gotowych odpowiedzi korzysta teraz z tej samej natywnej konstrukcji `panel` i nagłówka `h3` co pozostałe sekcje ustawień PrestaShop.
+- Dodano ikony do nagłówków: gotowe odpowiedzi, informacje o module, reguły automatycznych odpowiedzi oraz ostatnie logi.
+
 ## [0.2.162] - 2026-07-12
 - Usunięto konflikt nagłówka panelu gotowych odpowiedzi ze stylami `.panel h3` PrestaShop, który powodował nadmierną wysokość i pustą przestrzeń.
 - Zagęszczono odstępy nagłówka, tabeli i stopki oraz zachowano czytelny układ mobilny.
