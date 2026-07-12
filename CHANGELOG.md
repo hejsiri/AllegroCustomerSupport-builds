@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.168] - 2026-07-12
+- Przycisk kopiowania adresu CRON jest domyślnie niebieski z białym tekstem i ikoną.
+- Po skopiowaniu zielony stan „Skopiowano” zachowuje biały tekst i ikonę również po najechaniu oraz ustawieniu fokusu.
+
 ## [0.2.167] - 2026-07-12
 - Pole adresu CRON i doklejone przyciski korzystają teraz z niezależnego układu flex zamiast konfliktującego `input-group` panelu administracyjnego.
 - Wymuszono identyczną wysokość 52 px, wspólne obramowanie oraz pionowe wyśrodkowanie zawartości pola i przycisków.
