@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.171] - 2026-07-12
+- Do etykiety „Włącz moduł” dodano podpowiedź wyjaśniającą, że przełącznik steruje automatycznym skanowaniem i odpowiedziami przez CRON, ale nie wyłącza panelu ani funkcji ręcznych.
+
 ## [0.2.170] - 2026-07-12
 - Po wejściu do ustawień moduł automatycznie sprawdza dostępność aktualizacji i pokazuje wynik na głównym przycisku aktualizacji.
 - Automatyczne sprawdzenie nie instaluje aktualizacji; instalacja nadal wymaga świadomego kliknięcia przycisku.
