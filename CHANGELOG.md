@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.176] - 2026-07-12
+- Ujednolicono globalny odstęp między ikoną i tekstem we wszystkich przyciskach interfejsu modułu do 8 px.
+- Reguła obejmuje ustawienia, wiadomości, dyskusje, reklamacje, zwroty oraz dynamiczne stany przycisku aktualizacji.
+
 ## [0.2.175] - 2026-07-12
 - Wiadomości klientów powiązane z ofertą pokazują teraz miniaturę produktu obok numeru oferty.
 - Miniatura jest rozwiązywana najpierw z produktu PrestaShop, następnie z danych oferty Allegro i zapisywana w cache według `offer_id`.
