@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.158] - 2026-07-12
+- Dodano niezależny endpoint CRON-u w katalogu modułu, omijający niedziałający routing kontrolerów frontowych PrestaShop.
+- Adres CRON-u w ustawieniach jest prezentowany w polu tekstowym z przyciskami kopiowania i otwierania w nowej karcie.
+
 ## [0.2.157] - 2026-07-12
 - Odświeżono panel gotowych odpowiedzi: dodano spójny nagłówek, czytelne karty, podpowiedź zmiennych i responsywny układ mobilny.
 - Adres CRON w ustawieniach korzysta teraz z bezpośredniej trasy `index.php`, niezależnej od przyjaznych adresów i prefiksu języka.
