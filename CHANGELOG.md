@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.2.165] - 2026-07-12
+- Przycisk „Dodaj odpowiedź” w panelu gotowych odpowiedzi ma teraz niebieski styl głównej akcji.
+
 ## [0.2.164] - 2026-07-12
 - Przycisk ręcznego uruchamiania skanowania ma teraz niebieski styl głównej akcji oraz ikonę odświeżania.
 
