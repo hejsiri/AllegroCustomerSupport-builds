@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.162] - 2026-07-12
+- Usunięto konflikt nagłówka panelu gotowych odpowiedzi ze stylami `.panel h3` PrestaShop, który powodował nadmierną wysokość i pustą przestrzeń.
+- Zagęszczono odstępy nagłówka, tabeli i stopki oraz zachowano czytelny układ mobilny.
+
 ## [0.2.161] - 2026-07-12
 - Przyciski przy adresie CRON korzystają ponownie ze standardowego układu grupy pól Bootstrap i mają dokładnie tę samą wysokość co pole URL.
 
