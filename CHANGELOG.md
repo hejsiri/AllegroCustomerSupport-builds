@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.175] - 2026-07-12
+- Wiadomości klientów powiązane z ofertą pokazują teraz miniaturę produktu obok numeru oferty.
+- Miniatura jest rozwiązywana najpierw z produktu PrestaShop, następnie z danych oferty Allegro i zapisywana w cache według `offer_id`.
+
 ## [0.2.174] - 2026-07-12
 - Nagłówek „Rozmowa z…” w sekcji wiadomości jest teraz linkiem otwierającym odpowiadający wątek w Centrum Wiadomości Allegro w nowej karcie.
 - Link korzysta z bezpośredniej trasy Sales Center `/message-center/messages/thread/{threadId}`.
