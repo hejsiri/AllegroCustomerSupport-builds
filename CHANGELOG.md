@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.177] - 2026-07-12
+- Filtry wiadomości mają teraz tekst w spójnym, stonowanym kolorze oraz własne turkusowe checkboxy niezależne od systemowego stylu przeglądarki.
+- Zaznaczony checkbox ma białą ikonę wyboru, a fokus otrzymał czytelne turkusowe podświetlenie.
+
 ## [0.2.176] - 2026-07-12
 - Ujednolicono globalny odstęp między ikoną i tekstem we wszystkich przyciskach interfejsu modułu do 8 px.
 - Reguła obejmuje ustawienia, wiadomości, dyskusje, reklamacje, zwroty oraz dynamiczne stany przycisku aktualizacji.
