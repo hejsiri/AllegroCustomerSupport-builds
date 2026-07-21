@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.107] - 2026-07-21
+
+- Poprawiono autoryzację podglądu i pobierania załączników reklamacji oraz dyskusji w Back Office.
+- Dostęp jest teraz weryfikowany na podstawie zalogowanego pracownika i faktycznie uruchomionego kontrolera administracyjnego, bez zależności od postaci parametru `controller` w adresie.
+- Obrazki pozostają chronione i są pobierane z Allegro przez autoryzowane proxy dostępne wyłącznie w panelu administratora.
+
 ## [2.1.106] - 2026-07-21
 
 - Ustawienia nie pokazują już ręcznego przycisku „Sprawdź aktualizacje”.
