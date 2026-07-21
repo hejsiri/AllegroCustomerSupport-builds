@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.185] - 2026-07-21
+- Jeśli historyczna pozycja zamówienia X13 zawiera tytuł, ale nie zawiera ceny, kwota reklamowanego produktu jest pobierana z odpowiadającej jej pozycji `order_detail` w PrestaShop.
+- Dopasowanie lokalnej pozycji wykorzystuje sygnaturę oferty (`external.id`: ID produktu, referencję, EAN lub UPC), a dodatkowo powiązanie numeru oferty w tabeli X13.
+- Kwota jest obliczana z historycznej ceny brutto właściwej pozycji i liczby reklamowanych sztuk; suma całego zamówienia nie jest używana.
+
 ## [0.2.184] - 2026-07-21
 - Dodano obsługę starszego formatu pozycji zamówienia zapisywanego przez moduł X13 jako `lineItems.items`.
 - Tytuł i kwota reklamowanego produktu są teraz pobierane z właściwej historycznej pozycji zamówienia także wtedy, gdy Allegro nie udostępnia już pełnych danych starego zamówienia przez API.
