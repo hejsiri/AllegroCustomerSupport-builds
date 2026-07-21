@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.106] - 2026-07-21
+
+- Ustawienia nie pokazują już ręcznego przycisku „Sprawdź aktualizacje”.
+- Dostępna wersja jest wykrywana automatycznie i prezentowana jako żółty alert z numerem wersji, buildu oraz przyciskiem „Aktualizuj teraz”.
+- Moduł zabezpiecza się przed wyświetleniem zduplikowanego alertu aktualizacji.
+
 ## [2.1.105] - 2026-07-21
 
 - Status licencji jest renderowany bezpośrednio na początku strony ustawień, więc pozostaje widoczny niezależnie od działania JavaScriptu i rejestracji hooka panelu administracyjnego.
