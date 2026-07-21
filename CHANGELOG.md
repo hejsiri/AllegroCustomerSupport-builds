@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.91] - 2026-07-21
+
+- Ustawienia modułu pokazują u góry taki sam alert licencji jak moduł pakowania: status pełnej wersji lub demo, termin aktualizacji oraz informację o bezterminowym działaniu modułu.
+- Panel automatycznie sprawdza dostępność aktualizacji Prestino i pokazuje alert z przyciskiem bezpiecznej instalacji, gdy nowsza wersja jest dostępna.
+- Alerty można zamknąć bez przeładowywania strony; brak połączenia z serwerem aktualizacji nie blokuje ustawień modułu.
+
 ## [2.1.90] - 2026-07-21
 
 - Przywrócono właściwą linię numeracji `2.1.x`; poprzednie wydanie produkcyjne `2.1.78` odpowiadało funkcjonalnie dawnej wersji `0.2.179`.
