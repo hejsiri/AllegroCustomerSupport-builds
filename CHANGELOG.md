@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.104] - 2026-07-21
+
+- Modal odrzucenia reklamacji pokazuje pełną informację o przekazaniu kupującemu decyzji i uzasadnienia.
+- Powody odrzucenia oraz sposoby uznania reklamacji są prezentowane w jednej kolumnie, bez obramowań i bez pogrubienia tekstu opcji.
+- Typografia sekcji decyzji i etykiety uzasadnienia została ujednolicona z pozostałymi modalami reklamacji.
+
 ## [2.1.103] - 2026-07-21
 
 - Historia reklamacji i dyskusji pobiera teraz wszystkie strony wiadomości po 100 wpisów i porównuje wynik z licznikiem `messagesCount` Allegro.
