@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.110] - 2026-07-21
+
+- Skrypt automatycznego sprawdzania aktualizacji, jego konfiguracja i style są dołączane bezpośrednio przez stronę ustawień, niezależnie od hooka `actionAdminControllerSetMedia`.
+- Żółty alert dostępnej aktualizacji działa również na instalacjach, na których hook mediów Back Office nie uruchamia się dla kontrolera ustawień.
+- Dodano zabezpieczenie przed podwójnym uruchomieniem sprawdzania, gdy zasoby zostaną jednocześnie dołączone przez szablon i hook.
+
 ## [2.1.109] - 2026-07-21
 
 - Załączniki i obrazki pozostają przy wiadomościach, z którymi zostały zwrócone przez Allegro, dzięki czemu są wyświetlane w chronologii rozmowy.
