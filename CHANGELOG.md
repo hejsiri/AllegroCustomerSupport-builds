@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.188] - 2026-07-21
+- Rozwinięcie „Załącz własną etykietę” zawiera teraz strefę przeciągania lub wyboru pliku, nazwę wybranej etykiety oraz osobną wiadomość do kupującego.
+- Rozwinięcie „Inna metoda odbioru” otrzymało dedykowane pole opisu odbioru zgodne z układem Allegro.
+- Oba pola wiadomości mają limit i licznik 700 znaków, a serwer odczytuje treść wyłącznie z aktualnie wybranej metody.
+- Uproszczono stopkę modalu: wysłanie następuje bez dodatkowego pola potwierdzenia, po wybraniu metody i uzupełnieniu wymaganych danych.
+
 ## [0.2.187] - 2026-07-21
 - Modal „Zaplanuj odesłanie lub odbiór towaru” pokazuje opcje zgodne z przebiegiem reklamacji Allegro: informację o Allegro Smart, własną etykietę oraz inną metodę odbioru.
 - Dodano wysyłanie własnej etykiety w formacie PDF lub obrazu do 2 MB przez oficjalny, dwuetapowy mechanizm załączników Allegro i wiadomość `RETURN_REQUIRED_SELLER_LABEL`.
