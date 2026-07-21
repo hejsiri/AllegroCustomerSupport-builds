@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.105] - 2026-07-21
+
+- Status licencji jest renderowany bezpośrednio na początku strony ustawień, więc pozostaje widoczny niezależnie od działania JavaScriptu i rejestracji hooka panelu administracyjnego.
+- Skrypt alertów rozpoznaje komunikat wyrenderowany przez serwer i nie dodaje jego duplikatu.
+
 ## [2.1.104] - 2026-07-21
 
 - Modal odrzucenia reklamacji pokazuje pełną informację o przekazaniu kupującemu decyzji i uzasadnienia.
