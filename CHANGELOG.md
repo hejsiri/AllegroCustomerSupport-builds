@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.96] - 2026-07-21
+
+- Powiększono tytuł „Rozpatrzenie reklamacji bez odesłania towaru” w oknie decyzji reklamacyjnej.
+
 ## [2.1.95] - 2026-07-21
 
 - Przyciski „Bez odesłania” i „Zaplanuj odesłanie” w pierwszym kroku reklamacji otrzymały niebieski styl podstawowy.
