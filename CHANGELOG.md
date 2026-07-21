@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.108] - 2026-07-21
+
+- Historia reklamacji kontynuuje pobieranie z kolejnym `offset`, gdy `messagesCount` wskazuje więcej wpisów mimo krótszej strony odpowiedzi API.
+- Wiadomość początkowa zgłoszenia z listy reklamacji jest zachowywana, jeśli odpowiedź szczegółowa zwróci dla niej pustą wartość.
+- Kompletność historii jest oceniana dopiero po scaleniu wiadomości czatu z `chat.initialMessage`, co usuwa fałszywe ostrzeżenia typu „Pobrano 2 z 3 wiadomości”.
+
 ## [2.1.107] - 2026-07-21
 
 - Poprawiono autoryzację podglądu i pobierania załączników reklamacji oraz dyskusji w Back Office.
