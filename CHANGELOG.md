@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.116] - 2026-07-22
+
+- Podgląd zdjęcia zajmuje niemal całą wysokość okna i nie wyświetla białego tła ani nazwy pliku.
+- Dodano przycisk zamknięcia „X” w prawym górnym rogu oraz przycisk „Pobierz” pod zdjęciem.
+- Tło strony pod podglądem jest lekko przyciemnione i rozmyte.
+
 ## [2.1.115] - 2026-07-21
 
 - Maksymalny wymiar miniatur obrazów został zmniejszony z 300 px do 150 px.
