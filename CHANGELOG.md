@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.187] - 2026-07-21
+- Modal „Zaplanuj odesłanie lub odbiór towaru” pokazuje opcje zgodne z przebiegiem reklamacji Allegro: informację o Allegro Smart, własną etykietę oraz inną metodę odbioru.
+- Dodano wysyłanie własnej etykiety w formacie PDF lub obrazu do 2 MB przez oficjalny, dwuetapowy mechanizm załączników Allegro i wiadomość `RETURN_REQUIRED_SELLER_LABEL`.
+- Dla innej metody odbioru formularz wymaga instrukcji dla kupującego i przekazuje ją jako `RETURN_REQUIRED_CUSTOM`.
+- Pola formularza oraz przycisk wysyłania reagują na wybraną metodę, a niedostępna w publicznym API opcja Smart jest wyświetlana jako nieaktywna.
+
 ## [0.2.186] - 2026-07-21
 - Dodano panel „Przebieg reklamacji” z osobnymi krokami decyzji o odesłaniu towaru i formalnego rozpatrzenia reklamacji.
 - Sprzedający może przez API Allegro zdecydować o rozpatrzeniu bez odsyłania albo wymagać odesłania/udostępnienia towaru wraz z instrukcją dla kupującego.
