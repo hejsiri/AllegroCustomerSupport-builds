@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.102] - 2026-07-21
+
+- Checkbox potwierdzenia w modalu „Bez odesłania” otrzymał standardowy styl Back Office: niebieskie wypełnienie i biały znacznik po zaznaczeniu.
+
 ## [2.1.101] - 2026-07-21
 
 - Ujednolicono wygląd wszystkich czterech modali obsługi reklamacji: niebieska belka, nagłówek 26 px, wspólne odstępy i typografia treści 16 px.
