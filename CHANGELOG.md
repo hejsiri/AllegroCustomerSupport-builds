@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.94] - 2026-07-21
+
+- Modal „Bez odesłania” otrzymał wskazany tytuł, opis skutków decyzji, informację o zapisie wiadomości w przebiegu reklamacji oraz pełne oświadczenie potwierdzające.
+- Usunięto widoczne pole edycji wiadomości; wymagana wiadomość systemowa jest nadal przekazywana do Allegro wraz z decyzją.
+
 ## [2.1.93] - 2026-07-21
 
 - Przycisk wyboru rozpatrzenia reklamacji bez zwrotu towaru otrzymał krótszą nazwę „Bez odesłania”.
