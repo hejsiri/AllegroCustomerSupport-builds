@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.111] - 2026-07-21
+
+- Rozbieżność między `chat.messagesCount` a wyczerpaną listą wiadomości API nie powoduje już fałszywego ostrzeżenia o niepełnej historii.
+- Historia jest uznawana za kompletną, gdy wszystkie strony zostały pobrane do pustej odpowiedzi bez błędu i bez osiągnięcia limitu bezpieczeństwa.
+- Niezgodność licznika Allegro pozostaje zapisana w metadanych diagnostycznych, ale alert pojawia się wyłącznie przy rzeczywistym błędzie pobierania lub osiągnięciu limitu stron.
+
 ## [2.1.110] - 2026-07-21
 
 - Skrypt automatycznego sprawdzania aktualizacji, jego konfiguracja i style są dołączane bezpośrednio przez stronę ustawień, niezależnie od hooka `actionAdminControllerSetMedia`.
