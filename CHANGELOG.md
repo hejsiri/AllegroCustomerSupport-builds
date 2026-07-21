@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.183] - 2026-07-21
+- Panel zawsze pobiera pełne szczegóły wybranej reklamacji przed przygotowaniem gotowych odpowiedzi, zamiast korzystać wyłącznie ze skróconego wpisu z listy zgłoszeń.
+- Dzięki pełnemu payloadowi reklamacji zmienne `{offer_title}` i `{claim_amount}` otrzymują identyfikator oferty potrzebny do dopasowania właściwej pozycji zamówienia Allegro.
+
 ## [0.2.182] - 2026-07-21
 - Tytuł oferty w gotowej odmowie reklamacji jest pobierany dodatkowo bezpośrednio z oferty Allegro, a przy zamówieniu z jednym produktem także z pozycji lokalnego zamówienia PrestaShop.
 - Usunięto podwójną kropkę po opisie wady przez normalizację końcowej interpunkcji zmiennej `{claim_reason_description}`.
