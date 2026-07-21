@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.100] - 2026-07-21
+
+- Naprawiono migracje buildów Prestino 10–13, które przez niezgodne nazwy funkcji blokowały aktualizację instalacji ze starszych buildów.
+- Proces budowania paczki sprawdza teraz automatycznie nazwę funkcji w każdym pliku migracji Prestino.
+
 ## [2.1.99] - 2026-07-21
 
 - Naprawiono rozwijanie pola załącznika po wybraniu opcji „Załącz własną etykietę”, także gdy rozmowa reklamacyjna została wczytana dynamicznie.
