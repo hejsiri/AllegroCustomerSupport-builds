@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.181] - 2026-07-21
+- Dodano zmienną `{offer_title}` uzupełnianą tytułem reklamowanej oferty Allegro.
+- Gotowa odmowa reklamacji używa teraz sformułowania „dotyczącą produktu {offer_title}”; migracja zmienia wyłącznie ten fragment istniejącego szablonu.
+- Uzupełnianie `{claim_amount}` korzysta dodatkowo z podsumowania płatności zamówienia Allegro i kwoty lokalnego zamówienia PrestaShop, gdy cena reklamowanej pozycji jest niedostępna.
+
 ## [0.2.180] - 2026-07-21
 - Wbudowany aktualizator uruchamia teraz skrypty migracyjne przed zapisaniem nowej wersji modułu w bazie danych.
 - Aktualizacja automatycznie dopisuje brakującą gotową odpowiedź „Odpowiedź na reklamację — odmowa” użytkownikom wersji `0.2.179`, bez nadpisywania istniejących szablonów.
