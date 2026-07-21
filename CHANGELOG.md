@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.184] - 2026-07-21
+- Dodano obsługę starszego formatu pozycji zamówienia zapisywanego przez moduł X13 jako `lineItems.items`.
+- Tytuł i kwota reklamowanego produktu są teraz pobierane z właściwej historycznej pozycji zamówienia także wtedy, gdy Allegro nie udostępnia już pełnych danych starego zamówienia przez API.
+- Kwota nadal dotyczy wyłącznie pozycji dopasowanej do reklamowanej oferty, a nie całego zamówienia.
+
 ## [0.2.183] - 2026-07-21
 - Panel zawsze pobiera pełne szczegóły wybranej reklamacji przed przygotowaniem gotowych odpowiedzi, zamiast korzystać wyłącznie ze skróconego wpisu z listy zgłoszeń.
 - Dzięki pełnemu payloadowi reklamacji zmienne `{offer_title}` i `{claim_amount}` otrzymują identyfikator oferty potrzebny do dopasowania właściwej pozycji zamówienia Allegro.
