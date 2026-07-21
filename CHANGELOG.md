@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.190 - 2026-07-21
+
+- Naprawiono sprawdzanie aktualizacji przez Prestino API w module Obsługi Klienta Allegro.
+- Aktualizator pobiera teraz kontekst sklepu przez standardowy `Context::getContext()` zamiast wywoływać nieistniejącą metodę modułu `getContext()`.
+
 ## 0.2.189 - 2026-07-21
 
 - Aktualizacje modułu są teraz sprawdzane i pobierane bezpośrednio z prywatnego API Prestino.
