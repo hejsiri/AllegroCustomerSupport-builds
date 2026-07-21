@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.115] - 2026-07-21
+
+- Maksymalny wymiar miniatur obrazów został zmniejszony z 300 px do 150 px.
+- Miniatury nadal zachowują naturalne proporcje i nie mają pustego tła wokół zdjęcia.
+
 ## [2.1.114] - 2026-07-21
 
 - Miniatury zachowują naturalne proporcje obrazu i nie są już umieszczane w kwadratowym kontenerze.
