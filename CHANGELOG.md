@@ -1,13 +1,18 @@
 # Changelog
 
-## [2.1.79] - 2026-07-21
+## [2.1.90] - 2026-07-21
 
 - Przywrócono właściwą linię numeracji `2.1.x`; poprzednie wydanie produkcyjne `2.1.78` odpowiadało funkcjonalnie dawnej wersji `0.2.179`.
 - Wydanie konsoliduje wszystkie późniejsze zmiany robocze opisane jako `0.2.180–0.2.190`, bez utraty funkcji reklamacji, szablonów, cen produktów ani integracji z Prestino API.
-- Dodano migrację zbiorczą dla sklepów aktualizowanych bezpośrednio z `2.1.78` oraz zachowano ścieżkę aktualizacji z instalacji `0.2.189` i `0.2.190`.
-- Aktualizacje korzystają z prywatnego API Prestino, serwerowej kontroli licencji i `updates_until`, kopii bezpieczeństwa, rollbacku oraz niezależnego buildu Prestino `3`.
+- Numer `2.1.90` zachowuje końcówkę ostatniej wersji roboczej `0.2.190`; omyłkowo opublikowane wydanie porządkujące `2.1.79` zostało zastąpione przez `2.1.90`.
+- Dodano migrację zbiorczą dla sklepów aktualizowanych bezpośrednio z `2.1.78` i `2.1.79` oraz zachowano ścieżkę aktualizacji z instalacji `0.2.189` i `0.2.190`.
+- Aktualizacje korzystają z prywatnego API Prestino, serwerowej kontroli licencji i `updates_until`, kopii bezpieczeństwa, rollbacku oraz niezależnego buildu Prestino `4`.
 
-> Wpisy `0.2.180–0.2.190` poniżej dokumentują wewnętrzną, omyłkowo kontynuowaną numerację po wydaniu `2.1.78`. Ich zawartość została oficjalnie włączona do `2.1.79`.
+> Wpisy `0.2.180–0.2.190` poniżej dokumentują wewnętrzną, omyłkowo kontynuowaną numerację po wydaniu `2.1.78`. Ich zawartość została oficjalnie włączona do `2.1.90`.
+
+## [2.1.79] - 2026-07-21
+
+- Krótkotrwałe wydanie przejściowe zastąpione tego samego dnia przez `2.1.90` w celu zachowania zgodności końcówki numeru z ostatnią wersją roboczą `0.2.190`.
 
 ## 0.2.190 - 2026-07-21
 
