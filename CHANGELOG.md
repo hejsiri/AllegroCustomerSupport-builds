@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.93] - 2026-07-21
+
+- Przycisk wyboru rozpatrzenia reklamacji bez zwrotu towaru otrzymał krótszą nazwę „Bez odesłania”.
+
 ## [2.1.92] - 2026-07-21
 
 - Przycisk rozpoczynający wybór sposobu zwrotu reklamowanego towaru otrzymał nazwę „Zaplanuj odesłanie” zamiast „Wymagaj odesłania”.
