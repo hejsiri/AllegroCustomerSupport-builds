@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.103] - 2026-07-21
+
+- Historia reklamacji i dyskusji pobiera teraz wszystkie strony wiadomości po 100 wpisów i porównuje wynik z licznikiem `messagesCount` Allegro.
+- Załączniki z wiadomości, pierwszej wiadomości oraz formularza reklamacyjnego są scalane i usuwane są ich duplikaty.
+- Obrazy są wyświetlane jako miniatury z podglądem w modalu, a PDF-y i pozostałe pliki jako bezpieczne odnośniki do pobrania.
+- Pobieranie plików odbywa się wyłącznie przez zalogowany panel Back Office; token Allegro i bezpośredni adres załącznika nie są ujawniane w przeglądarce.
+- Dodano obsługę wiadomości zawierających wyłącznie załącznik oraz ostrzeżenie, gdy historia nie jest kompletna.
+
 ## [2.1.102] - 2026-07-21
 
 - Checkbox potwierdzenia w modalu „Bez odesłania” otrzymał standardowy styl Back Office: niebieskie wypełnienie i biały znacznik po zaznaczeniu.
