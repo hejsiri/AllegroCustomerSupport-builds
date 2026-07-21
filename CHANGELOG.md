@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.112] - 2026-07-21
+
+- Miniatury obrazów w historii reklamacji mają jednolity rozmiar 150 × 150 px i delikatnie zaokrąglone rogi.
+- Usunięto widoczne podpisy z nazwami plików pod miniaturami.
+- Nazwa pliku pozostaje dostępna dla czytników ekranu i w oknie podglądu załącznika.
+
 ## [2.1.111] - 2026-07-21
 
 - Rozbieżność między `chat.messagesCount` a wyczerpaną listą wiadomości API nie powoduje już fałszywego ostrzeżenia o niepełnej historii.
