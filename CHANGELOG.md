@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.97] - 2026-07-21
+
+- Modal rozpatrzenia reklamacji bez odesłania otrzymał standardową niebieską belkę akcentową u góry.
+
 ## [2.1.96] - 2026-07-21
 
 - Powiększono tytuł „Rozpatrzenie reklamacji bez odesłania towaru” w oknie decyzji reklamacyjnej.
