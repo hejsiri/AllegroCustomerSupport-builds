@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.92] - 2026-07-21
+
+- Przycisk rozpoczynający wybór sposobu zwrotu reklamowanego towaru otrzymał nazwę „Zaplanuj odesłanie” zamiast „Wymagaj odesłania”.
+
 ## [2.1.91] - 2026-07-21
 
 - Ustawienia modułu pokazują u góry taki sam alert licencji jak moduł pakowania: status pełnej wersji lub demo, termin aktualizacji oraz informację o bezterminowym działaniu modułu.
