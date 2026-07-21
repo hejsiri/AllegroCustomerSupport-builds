@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.180] - 2026-07-21
+- Wbudowany aktualizator uruchamia teraz skrypty migracyjne przed zapisaniem nowej wersji modułu w bazie danych.
+- Aktualizacja automatycznie dopisuje brakującą gotową odpowiedź „Odpowiedź na reklamację — odmowa” użytkownikom wersji `0.2.179`, bez nadpisywania istniejących szablonów.
+
 ## [0.2.179] - 2026-07-21
 - Dodano gotową odpowiedź odrzucającą reklamację, która uzupełnia dane zakupu, reklamacji, produktu, kwoty oraz opis wady bez nadpisywania istniejących szablonów.
 - Dodano zmienne `{purchase_date}`, `{claim_submitted_date}`, `{claim_received_date}`, `{claim_reason}` i `{claim_reason_description}` wraz ze zgodnymi aliasami.
