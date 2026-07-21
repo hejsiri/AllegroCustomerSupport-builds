@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.98] - 2026-07-21
+
+- Treść modala „Zaplanuj odesłanie” została ujednolicona ze wzorem Allegro, wraz z pełnymi opisami metod oraz linkiem do informacji o etykiecie Allegro.
+
 ## [2.1.97] - 2026-07-21
 
 - Modal rozpatrzenia reklamacji bez odesłania otrzymał standardową niebieską belkę akcentową u góry.
