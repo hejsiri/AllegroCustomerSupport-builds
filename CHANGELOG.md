@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.114] - 2026-07-21
+
+- Miniatury zachowują naturalne proporcje obrazu i nie są już umieszczane w kwadratowym kontenerze.
+- Ramka przylega bezpośrednio do zdjęcia, bez pustego tła wokół grafiki.
+- Maksymalny wymiar miniatury wynosi 300 px, aby duże obrazy nie rozszerzały nadmiernie historii rozmowy.
+
 ## [2.1.113] - 2026-07-21
 
 - Powtórzone obrazy są usuwane z historii reklamacji na podstawie identyfikatora załącznika Allegro oraz znormalizowanej nazwy pliku.
