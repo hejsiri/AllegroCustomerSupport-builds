@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.101] - 2026-07-21
+
+- Ujednolicono wygląd wszystkich czterech modali obsługi reklamacji: niebieska belka, nagłówek 26 px, wspólne odstępy i typografia treści 16 px.
+- Oświadczenie „Potwierdzam, że rezygnuje…” ma teraz taki sam rozmiar jak pozostałe akapity i zwykłą, niepogrubioną grubość pisma.
+
 ## [2.1.100] - 2026-07-21
 
 - Naprawiono migracje buildów Prestino 10–13, które przez niezgodne nazwy funkcji blokowały aktualizację instalacji ze starszych buildów.
