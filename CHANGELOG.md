@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.113] - 2026-07-21
+
+- Powtórzone obrazy są usuwane z historii reklamacji na podstawie identyfikatora załącznika Allegro oraz znormalizowanej nazwy pliku.
+- Przy duplikacie pozostaje pierwszy egzemplarz w chronologii rozmowy.
+- Deduplikacja po nazwie dotyczy wyłącznie obrazów, dzięki czemu dokumenty i pozostałe pliki nie są omyłkowo ukrywane.
+
 ## [2.1.112] - 2026-07-21
 
 - Miniatury obrazów w historii reklamacji mają jednolity rozmiar 150 × 150 px i delikatnie zaokrąglone rogi.
