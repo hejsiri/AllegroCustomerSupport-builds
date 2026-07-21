@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.182] - 2026-07-21
+- Tytuł oferty w gotowej odmowie reklamacji jest pobierany dodatkowo bezpośrednio z oferty Allegro, a przy zamówieniu z jednym produktem także z pozycji lokalnego zamówienia PrestaShop.
+- Usunięto podwójną kropkę po opisie wady przez normalizację końcowej interpunkcji zmiennej `{claim_reason_description}`.
+- Kwota reklamacji jest liczona wyłącznie z ceny jednostkowej pozycji zamówienia Allegro dopasowanej po `offer.id` lub `offer.offerId` i liczby sztuk wskazanej w reklamacji.
+- Usunięto fallback do całkowitej wartości zamówienia; przy braku jednoznacznego dopasowania kwota pozostaje pusta zamiast pokazywać sumę innych produktów.
+
 ## [0.2.181] - 2026-07-21
 - Dodano zmienną `{offer_title}` uzupełnianą tytułem reklamowanej oferty Allegro.
 - Gotowa odmowa reklamacji używa teraz sformułowania „dotyczącą produktu {offer_title}”; migracja zmienia wyłącznie ten fragment istniejącego szablonu.
