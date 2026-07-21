@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.109] - 2026-07-21
+
+- Załączniki i obrazki pozostają przy wiadomościach, z którymi zostały zwrócone przez Allegro, dzięki czemu są wyświetlane w chronologii rozmowy.
+- Główna lista załączników reklamacji nie jest już bezwarunkowo przypisywana do pierwszej wiadomości.
+- Na początku rozmowy pojawiają się wyłącznie pliki formularza reklamacyjnego, których nie ma przy żadnej wiadomości w historii.
+
 ## [2.1.108] - 2026-07-21
 
 - Historia reklamacji kontynuuje pobieranie z kolejnym `offset`, gdy `messagesCount` wskazuje więcej wpisów mimo krótszej strony odpowiedzi API.
