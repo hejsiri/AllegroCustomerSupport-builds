@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.79] - 2026-07-21
+
+- Przywrócono właściwą linię numeracji `2.1.x`; poprzednie wydanie produkcyjne `2.1.78` odpowiadało funkcjonalnie dawnej wersji `0.2.179`.
+- Wydanie konsoliduje wszystkie późniejsze zmiany robocze opisane jako `0.2.180–0.2.190`, bez utraty funkcji reklamacji, szablonów, cen produktów ani integracji z Prestino API.
+- Dodano migrację zbiorczą dla sklepów aktualizowanych bezpośrednio z `2.1.78` oraz zachowano ścieżkę aktualizacji z instalacji `0.2.189` i `0.2.190`.
+- Aktualizacje korzystają z prywatnego API Prestino, serwerowej kontroli licencji i `updates_until`, kopii bezpieczeństwa, rollbacku oraz niezależnego buildu Prestino `3`.
+
+> Wpisy `0.2.180–0.2.190` poniżej dokumentują wewnętrzną, omyłkowo kontynuowaną numerację po wydaniu `2.1.78`. Ich zawartość została oficjalnie włączona do `2.1.79`.
+
 ## 0.2.190 - 2026-07-21
 
 - Naprawiono sprawdzanie aktualizacji przez Prestino API w module Obsługi Klienta Allegro.
@@ -59,6 +68,11 @@
 ## [0.2.180] - 2026-07-21
 - Wbudowany aktualizator uruchamia teraz skrypty migracyjne przed zapisaniem nowej wersji modułu w bazie danych.
 - Aktualizacja automatycznie dopisuje brakującą gotową odpowiedź „Odpowiedź na reklamację — odmowa” użytkownikom wersji `0.2.179`, bez nadpisywania istniejących szablonów.
+
+## [2.1.78] - 2026-07-16
+
+- Zmieniono schemat numeracji wersji modułu z linii `0.2.x` na `2.1.x`.
+- Wydanie odpowiadało funkcjonalnie ówczesnej wersji `0.2.179` z 14 lipca 2026 r.
 
 ## [0.2.179] - 2026-07-21
 - Dodano gotową odpowiedź odrzucającą reklamację, która uzupełnia dane zakupu, reklamacji, produktu, kwoty oraz opis wady bez nadpisywania istniejących szablonów.
