@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.179] - 2026-07-21
+- Dodano gotową odpowiedź odrzucającą reklamację, która uzupełnia dane zakupu, reklamacji, produktu, kwoty oraz opis wady bez nadpisywania istniejących szablonów.
+- Dodano zmienne `{purchase_date}`, `{claim_submitted_date}`, `{claim_received_date}`, `{claim_reason}` i `{claim_reason_description}` wraz ze zgodnymi aliasami.
+- Wynik diagnozy w gotowej odpowiedzi pozostaje oznaczony jako pole wymagające ręcznego uzupełnienia przed wysłaniem.
+
+## [0.2.178] - 2026-07-14
+- Naprawiono rozpoczynanie autoryzacji konta Allegro na sklepach, na których trasa frontowa `module/allegrocustomerservice/deviceauth` zwracała błąd 404.
+- Żądania Device Flow są teraz obsługiwane przez chroniony kontroler ustawień w Back Office, bez ujawniania tokenu CRON w adresie autoryzacji.
+
 ## [0.2.177] - 2026-07-12
 - Filtry wiadomości mają teraz tekst w spójnym, stonowanym kolorze oraz własne turkusowe checkboxy niezależne od systemowego stylu przeglądarki.
 - Zaznaczony checkbox ma białą ikonę wyboru, a fokus otrzymał czytelne turkusowe podświetlenie.
