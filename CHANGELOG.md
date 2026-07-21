@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.118] - 2026-07-22
+
+- Przycisk pobierania jest wyświetlany jako sama ikona w prawym dolnym rogu powiększonego zdjęcia.
+
 ## [2.1.117] - 2026-07-22
 
 - Powiększone zdjęcie w podglądzie ma delikatnie zaokrąglone rogi.
