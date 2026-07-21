@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.189 - 2026-07-21
+
+- Aktualizacje modułu są teraz sprawdzane i pobierane bezpośrednio z prywatnego API Prestino.
+- Serwer Prestino weryfikuje licencję, domenę oraz termin dostępu do aktualizacji (`updates_until`).
+- Przed instalacją aktualizacji moduł tworzy kopię bezpieczeństwa i automatycznie przywraca ją po błędzie.
+- Dodano niezależny od wersji modułu numer buildu Prestino oraz obsługę migracji buildów.
+- Zachowano ważność dotychczasowych licencji lokalnych; dostęp do nowych aktualizacji wymaga licencji wystawionej przez Prestino.
+
 ## [0.2.188] - 2026-07-21
 - Rozwinięcie „Załącz własną etykietę” zawiera teraz strefę przeciągania lub wyboru pliku, nazwę wybranej etykiety oraz osobną wiadomość do kupującego.
 - Rozwinięcie „Inna metoda odbioru” otrzymało dedykowane pole opisu odbioru zgodne z układem Allegro.
