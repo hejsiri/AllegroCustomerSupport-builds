@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.117] - 2026-07-22
+
+- Powiększone zdjęcie w podglądzie ma delikatnie zaokrąglone rogi.
+
 ## [2.1.116] - 2026-07-22
 
 - Podgląd zdjęcia zajmuje niemal całą wysokość okna i nie wyświetla białego tła ani nazwy pliku.
