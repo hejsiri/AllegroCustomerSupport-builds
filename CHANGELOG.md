@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.186] - 2026-07-21
+- Dodano panel „Przebieg reklamacji” z osobnymi krokami decyzji o odesłaniu towaru i formalnego rozpatrzenia reklamacji.
+- Sprzedający może przez API Allegro zdecydować o rozpatrzeniu bez odsyłania albo wymagać odesłania/udostępnienia towaru wraz z instrukcją dla kupującego.
+- Dodano modal uznania reklamacji z wyborem naprawy, wymiany, zwrotu płatności lub częściowego zwrotu oraz modal odrzucenia z pełną listą powodów API Allegro i wymaganym uzasadnieniem.
+- Operacje zmieniające przebieg i status reklamacji wymagają jawnego zatwierdzenia, są walidowane i zapisywane w logach modułu.
+
 ## [0.2.185] - 2026-07-21
 - Jeśli historyczna pozycja zamówienia X13 zawiera tytuł, ale nie zawiera ceny, kwota reklamowanego produktu jest pobierana z odpowiadającej jej pozycji `order_detail` w PrestaShop.
 - Dopasowanie lokalnej pozycji wykorzystuje sygnaturę oferty (`external.id`: ID produktu, referencję, EAN lub UPC), a dodatkowo powiązanie numeru oferty w tabeli X13.
