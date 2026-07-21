@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.99] - 2026-07-21
+
+- Naprawiono rozwijanie pola załącznika po wybraniu opcji „Załącz własną etykietę”, także gdy rozmowa reklamacyjna została wczytana dynamicznie.
+- Obsługa nazwy wybranego pliku, pól wymaganych i liczników znaków działa teraz z poziomu głównego interfejsu modułu.
+
 ## [2.1.98] - 2026-07-21
 
 - Treść modala „Zaplanuj odesłanie” została ujednolicona ze wzorem Allegro, wraz z pełnymi opisami metod oraz linkiem do informacji o etykiecie Allegro.
