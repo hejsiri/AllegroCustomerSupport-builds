@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.119] - 2026-07-24
+
+- Moduł rozpoznaje zamówienia dostarczone w ramach Allegro SMART na podstawie aktualnych danych zamówienia.
+- Dla reklamacji dotyczącej zamówienia SMART opcja bezpłatnego zwrotu jest aktywna i prowadzi bezpośrednio do reklamacji w Sales Center, gdzie sprzedający przekazuje Allegro decyzję o sposobie odesłania; etykietę generuje później kupujący.
+- Opcja nie jest już myląco wyłączona dla wszystkich reklamacji; moduł pokazuje osobny komunikat dla dostawy bez SMART oraz dla braku danych o metodzie dostawy.
+
 ## [2.1.118] - 2026-07-22
 
 - Przycisk pobierania jest wyświetlany jako sama ikona w prawym dolnym rogu powiększonego zdjęcia.
