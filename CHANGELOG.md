@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.122] - 2026-07-24
+
+- Informacja o wymaganym lub niewymaganym odesłaniu towaru jest prezentowana jako czytelny kafelek statusu z ikoną, nagłówkiem i krótkim objaśnieniem.
+
 ## [2.1.121] - 2026-07-24
 
 - Komunikat przy opcji zwrotu Allegro SMART wyjaśnia, że publiczne API nie pozwala jeszcze zatwierdzić tej decyzji bezpośrednio w module oraz że Allegro pracuje nad udostępnieniem takiej możliwości.
