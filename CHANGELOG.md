@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.120] - 2026-07-24
+
+- Opcję bezpłatnego zwrotu Allegro SMART można teraz normalnie zaznaczyć w oknie wyboru sposobu odesłania.
+- Po zaznaczeniu SMART przycisk formularza prowadzi do właściwej reklamacji w Sales Center, gdzie sprzedający zatwierdza sposób odesłania bez generowania etykiety w module.
+
 ## [2.1.119] - 2026-07-24
 
 - Moduł rozpoznaje zamówienia dostarczone w ramach Allegro SMART na podstawie aktualnych danych zamówienia.
