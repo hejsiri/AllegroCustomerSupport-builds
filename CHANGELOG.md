@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.123] - 2026-07-24
+
+- Techniczna nazwa modułu jest przypisywana bezpośrednio w konstruktorze, dzięki czemu paczka przechodzi kontrolę wymaganej właściwości `$this->name` w PrestaShop Addons Validator.
+
 ## [2.1.122] - 2026-07-24
 
 - Informacja o wymaganym lub niewymaganym odesłaniu towaru jest prezentowana jako czytelny kafelek statusu z ikoną, nagłówkiem i krótkim objaśnieniem.
