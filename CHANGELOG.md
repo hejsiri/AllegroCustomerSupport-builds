@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.121] - 2026-07-24
+
+- Komunikat przy opcji zwrotu Allegro SMART wyjaśnia, że publiczne API nie pozwala jeszcze zatwierdzić tej decyzji bezpośrednio w module oraz że Allegro pracuje nad udostępnieniem takiej możliwości.
+
 ## [2.1.120] - 2026-07-24
 
 - Opcję bezpłatnego zwrotu Allegro SMART można teraz normalnie zaznaczyć w oknie wyboru sposobu odesłania.
