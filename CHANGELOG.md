@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.136] - 2026-08-09
+
+- Autoryzacja prosi wyłącznie o zakresy używane przez moduł: profil, odczyt ofert, zamówienia, spory, zwroty płatności i wiadomości.
+- Usunięto zbędne dostępy do salda, historii płatności oraz zarządzania przesyłkami.
+
 ## [2.1.135] - 2026-08-09
 
 - Nagłówek `User-Agent` używa wyłącznie znaków ASCII, dzięki czemu Allegro poprawnie wydaje token użytkownika w Device Flow.
