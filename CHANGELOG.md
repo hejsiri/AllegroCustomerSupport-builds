@@ -1,5 +1,59 @@
 # Changelog
 
+## [2.1.134] - 2026-08-09
+
+- Nagłówek `User-Agent` korzysta z identyfikatora wygenerowanego przez Allegro dla aplikacji „Prestino Obsługa Klienta Allegro”.
+- Adres w nagłówku jest stałym adresem dokumentacji produktu, dzięki czemu identyfikator pozostaje zgodny we wszystkich instalacjach modułu.
+- Aktualizacja rozłącza konto powiązane ze starszą aplikacją OAuth; po instalacji należy jednorazowo ponownie połączyć konto Allegro.
+
+## [2.1.133] - 2026-08-07
+
+- Każde zapytanie do API Allegro zawiera wymagany nagłówek `User-Agent` z adresem sklepu, który wykonuje zapytanie, oraz faktycznie zainstalowaną wersją modułu.
+- Ujednolicono identyfikację aplikacji dla autoryzacji, obsługi wiadomości, reklamacji, zwrotów i chronionego pobierania załączników.
+
+## [2.1.132] - 2026-07-24
+
+- Usunięto numery buildów z interfejsu aktualizacji; moduł prezentuje użytkownikowi wyłącznie numer wersji `2.1.x`.
+- Poprawiono rozpoznawanie zainstalowanego wydania, aby panel nie proponował ponownie tej samej aktualizacji.
+
+## [2.1.131] - 2026-07-24
+
+- Dodano polskie tłumaczenie tytułu dyskusji „I have a problem returning the product” na liście zgłoszeń, w podglądzie i nagłówku rozmowy.
+
+## [2.1.130] - 2026-07-24
+
+- Wszystkie fragmenty HTML panelu administracyjnego są renderowane przez szablon Smarty zamiast być zapisane bezpośrednio w kodzie PHP.
+- Usunięto 447 zaleceń optymalizacyjnych zgłoszonych przez PrestaShop Addons Validator bez zmiany działania ekranów modułu.
+
+## [2.1.129] - 2026-07-24
+
+- Własnościowe nagłówki Prestino są umieszczone bezpośrednio po znaczniku otwierającym PHP, zgodnie z kontrolą nagłówków licencyjnych PrestaShop Validator.
+
+## [2.1.128] - 2026-07-24
+
+- Dodano własnościowe nagłówki prawne Prestino do plików modułu, bez udostępniania kodu na licencji otwartej.
+- Kod PHP został automatycznie dostosowany do oficjalnych reguł formatowania PrestaShop i ponownie sprawdzony pod kątem poprawnej składni.
+
+## [2.1.127] - 2026-07-24
+
+- Kontroler miniatur jednoznacznie zawęża typ instancji modułu, usuwając ostatnie ostrzeżenia kompatybilności PrestaShop Addons Validator.
+
+## [2.1.126] - 2026-07-24
+
+- Autorem modułu prezentowanym w PrestaShop i metadanych paczki jest teraz Prestino.
+
+## [2.1.125] - 2026-07-24
+
+- Usunięto pozostałe ostrzeżenia kompatybilności wykazane przez PrestaShop Addons Validator.
+- Zastąpiono przestarzałe wyszukiwanie zakładek bezpośrednim, zgodnym odczytem identyfikatora z tabeli `tab`.
+- Zaufane fragmenty HTML panelu administracyjnego są osadzane po renderowaniu szablonu, dzięki czemu szablon nie wyłącza już mechanizmu escapowania Smarty.
+
+## [2.1.124] - 2026-07-24
+
+- Uzupełniono zabezpieczenia struktury paczki wymagane przez PrestaShop Addons Validator: pliki `index.php`, ochronę `.htaccess` i kontrolę kontekstu PrestaShop w plikach wykonywalnych.
+- Główna klasa modułu ma standardową deklarację `extends Module`, a opis techniczny jest spójny i zapisany po angielsku.
+- Poprawiono zgodność typów właściwości zakładek oraz wybrane ostrzeżenia analizy statycznej bez zmiany działania modułu.
+
 ## [2.1.123] - 2026-07-24
 
 - Techniczna nazwa modułu jest przypisywana bezpośrednio w konstruktorze, dzięki czemu paczka przechodzi kontrolę wymaganej właściwości `$this->name` w PrestaShop Addons Validator.
