@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.135] - 2026-08-09
+
+- Nagłówek `User-Agent` używa wyłącznie znaków ASCII, dzięki czemu Allegro poprawnie wydaje token użytkownika w Device Flow.
+
 ## [2.1.134] - 2026-08-09
 
 - Nagłówek `User-Agent` korzysta z identyfikatora wygenerowanego przez Allegro dla aplikacji „Prestino Obsługa Klienta Allegro”.
